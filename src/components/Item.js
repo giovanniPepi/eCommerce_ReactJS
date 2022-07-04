@@ -1,17 +1,12 @@
 import React from "react";
+import Header from "./Header";
 
 const Item = (props) => {
   const { name, description, price, frontImg, backImg, cart } = props;
 
   return (
-    <main className="itemPage">
-      <header className="itemPageHeader">
-        <nav className="itemPageNav">
-          <button>Home</button>
-          <button>Catalog</button>
-          <div className="cart">{cart}</div>
-        </nav>
-      </header>
+    <main className="mainContent itemPage">
+      <Header />
       <section className="itemInfo">
         <div className="leftPage">
           <span className="itemName" data-testid="nameSpan">
