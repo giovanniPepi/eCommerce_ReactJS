@@ -10,7 +10,9 @@ const Catalog = (props) => {
         <nav className="leftBarNav">
           <ul className="ulCategory">
             {data.map((item) => (
-              <li className="categoryListIem">{item.name}</li>
+              <li className="categoryListIem" key={item.name}>
+                {item.name}
+              </li>
             ))}
           </ul>
         </nav>

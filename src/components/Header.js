@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const Header = (props) => {
   const { cart } = props;
@@ -6,8 +7,12 @@ const Header = (props) => {
   return (
     <header className="itemPageHeader" data-testid="headerTest">
       <nav className="itemPageNav">
-        <button>Home</button>
-        <button>Catalog</button>
+        <Link to="/">
+          <button>Home</button>
+        </Link>
+        <Link to="/catalog">
+          <button>Catalog</button>
+        </Link>
         <div className="cart">{cart}</div>
       </nav>
     </header>
