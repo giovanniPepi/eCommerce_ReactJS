@@ -1,5 +1,4 @@
 import { render, screen } from "@testing-library/react";
-import Header from "../Header.js";
 import "@testing-library/jest-dom";
 import Catalog from "../Catalog.js";
 
