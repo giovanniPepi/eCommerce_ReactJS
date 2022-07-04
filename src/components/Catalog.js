@@ -1,5 +1,5 @@
 import React from "react";
-import data from "../data/Data";
+import categories from "../data/categories";
 import Header from "./Header";
 
 const Catalog = (props) => {
@@ -9,9 +9,9 @@ const Catalog = (props) => {
       <section className="catalog">
         <nav className="leftBarNav">
           <ul className="ulCategory">
-            {data.map((item) => (
-              <li className="categoryListIem" key={item.name}>
-                {item.name}
+            {categories.map((item) => (
+              <li className="categoryListIem" key={item}>
+                {item}
               </li>
             ))}
           </ul>
