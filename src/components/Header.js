@@ -5,8 +5,8 @@ const Header = (props) => {
   const { cart } = props;
 
   return (
-    <header className="itemPageHeader" data-testid="headerTest">
-      <nav className="itemPageNav">
+    <header className="header" data-testid="headerTest">
+      <nav className="headerNav">
         <Link to="/">
           <button>Home</button>
         </Link>

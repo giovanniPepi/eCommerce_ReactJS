@@ -22,10 +22,18 @@ const Catalog = (props) => {
           <ul className="catalogList">
             {data &&
               data.map((item) => (
-                <li key={item.name} className="catalogItem">
-                  <div className="itemCatalogImg">
-                    <img src={item.img} alt={item.name} />
-                    <img src={item.imgback} alt={item.name} />
+                <li key={item.name} className="catalogItemLi">
+                  <div className="itemCatalogContainer">
+                    <img
+                      src={item.img}
+                      alt={item.name}
+                      className="catalogItem front"
+                    />
+                    <img
+                      src={item.imgback}
+                      alt={item.name}
+                      className="catalogItem back"
+                    />
                   </div>
                   <span>{item.name}</span>
                   <span>${item.price}</span>
