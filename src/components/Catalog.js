@@ -1,8 +1,10 @@
 import React from "react";
-import categories from "../data/categories";
+import data from "../data/Data";
 import Header from "./Header";
 
 const Catalog = (props) => {
+  const categories = ["Processors", "Motherboards", "GPUs", "Monitors", "RAM"];
+
   return (
     <main className="mainContent">
       <Header />
@@ -16,7 +18,21 @@ const Catalog = (props) => {
             ))}
           </ul>
         </nav>
-        <section className="itemGrid"></section>
+        <section className="itemGrid">
+          <ul className="catalogList">
+            {data &&
+              data.map((item) => (
+                <li key={item.name} className="catalogItem">
+                  <div className="itemCatalogImg">
+                    <img src={item.img} alt={item.name} />
+                    <img src={item.imgback} alt={item.name} />
+                  </div>
+                  <span>{item.name}</span>
+                  <span>${item.price}</span>
+                </li>
+              ))}
+          </ul>
+        </section>
       </section>
     </main>
   );
