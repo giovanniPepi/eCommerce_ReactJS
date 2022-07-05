@@ -13,14 +13,21 @@ li {
 .headerNav {
   display: flex;
 }
+
+.catalog {
+  display: flex;
+}
+.leftBarNav {
+  background-color: rgb(188, 192, 196);
+}
+.itemGrid {
+}
 .catalogList {
-  background-color: green;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   grid-template-rows: auto;
 }
 .itemCatalogContainer {
-  background-color: red;
   overflow: hidden;
 }
 .catalogItemLi {

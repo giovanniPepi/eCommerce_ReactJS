@@ -3,7 +3,7 @@ import asusled32back from "../img/monitor/asusled32back.jpg";
 
 const monitors = [
   {
-    category: "Monitor",
+    category: "Monitors",
     id: "",
     name: "Asus-ROG-Strix-32'-LED-Curvo-144-Hz-2K-QHD-FreeSync",
     price: 300,

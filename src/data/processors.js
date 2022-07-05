@@ -3,8 +3,8 @@ import ryzen3600back from "../img/processors/ryzen3600back.jpg";
 
 const processors = [
   {
-    category: "Processor",
-    id: "",
+    category: "Processors",
+    id: "processors",
     name: "Ryzen 3600",
     price: 0,
     img: ryzen3600,

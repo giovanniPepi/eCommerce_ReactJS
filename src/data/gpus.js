@@ -3,7 +3,7 @@ import rtx3060back from "../img/gpu/rtx3060back.jpg";
 
 const gpus = [
   {
-    category: "GPU",
+    category: "GPUs",
     id: "",
     name: "RTX 3060",
     price: 500,

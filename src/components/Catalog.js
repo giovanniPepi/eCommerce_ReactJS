@@ -1,9 +1,21 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
+import { Link, Routes, Route, useParams } from "react-router-dom";
 import data from "../data/Data";
 import Header from "./Header";
+import categories from "../data/categories";
 
 const Catalog = (props) => {
-  const categories = ["Processors", "Motherboards", "GPUs", "Monitors", "RAM"];
+  const [productsToShow, setProductsToShow] = useState(data);
+
+  const updateProducts = (category) => {
+    console.log("received", category);
+    const newProductsToShow = [
+      data[data.findIndex((item) => item.category === category)],
+    ];
+    console.log({ productsToShow }, newProductsToShow);
+
+    setProductsToShow(newProductsToShow);
+  };
 
   return (
     <main className="mainContent">
@@ -12,16 +24,23 @@ const Catalog = (props) => {
         <nav className="leftBarNav">
           <ul className="ulCategory">
             {categories.map((item) => (
-              <li className="categoryListIem" key={item}>
-                {item}
-              </li>
+              <Link to={`/catalog/${item.id}`} key={item.id}>
+                <li
+                  className="categoryListIem"
+                  key={item.name}
+                  onClick={() => updateProducts(item.name)}
+                >
+                  {item.name}
+                </li>
+              </Link>
             ))}
           </ul>
         </nav>
         <section className="itemGrid">
+          {/* Main page will display every item on database  */}
           <ul className="catalogList">
-            {data &&
-              data.map((item) => (
+            {productsToShow &&
+              productsToShow.map((item) => (
                 <li key={item.name} className="catalogItemLi">
                   <div className="itemCatalogContainer">
                     <img
