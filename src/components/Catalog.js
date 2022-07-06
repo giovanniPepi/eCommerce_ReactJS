@@ -8,13 +8,24 @@ const Catalog = (props) => {
   const [productsToShow, setProductsToShow] = useState(data);
 
   const updateProducts = (category) => {
-    const newProductsToShow = [
-      data[data.findIndex((item) => item.category === category)],
-    ];
-    setProductsToShow(newProductsToShow);
+    if (category) {
+      const newProductsToShow = [
+        data[data.findIndex((item) => item.category === category)],
+      ];
+      setProductsToShow(newProductsToShow);
+    } else {
+      setProductsToShow(data); // goes back to "all" sorting if no category is found
+    }
   };
 
-  useEffect(() => {}, [productsToShow]);
+  useEffect(() => {
+    if (productsToShow.length < 5) {
+      //handle browser title when clicking on categories
+      document.title = `Shopping Cart Catalog - ${productsToShow[0].category}`;
+    } else {
+      document.title = `Shopping Cart Catalog - All`;
+    }
+  }, [productsToShow]);
 
   return (
     <main className="mainContent">
@@ -27,6 +38,9 @@ const Catalog = (props) => {
             <div>catalog/All</div>
           )}
           <ul className="ulCategory">
+            <Link to={`/catalog`} key={"all"} onClick={() => updateProducts()}>
+              All
+            </Link>
             {categories.map((item) => (
               <Link to={`/catalog/${item.id}`} key={item.id}>
                 <li
