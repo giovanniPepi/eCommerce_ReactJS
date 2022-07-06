@@ -15,21 +15,17 @@ const Catalog = (props) => {
       );
       console.log("category!: ", category, "products", newProductsToShow);
       setProductsToShow(newProductsToShow);
-      console.log(productsToShow[0].category);
+      document.title = `Shopping Cart Catalog - ${category}`;
     } else {
       setProductsToShow(data); // goes back to "all" sorting if no category is found
-      console.log("fuck no category!: ", data);
+      console.log("no category!: ", data);
+      document.title = `Shopping Cart Catalog - All`;
     }
   };
 
   useEffect(() => {
-    if (productsToShow.length < 5) {
-      //handle browser title when clicking on categories
-      document.title = `Shopping Cart Catalog - ${productsToShow[0].category}`;
-    } else {
-      document.title = `Shopping Cart Catalog - All`;
-    }
-  }, [productsToShow]);
+    document.title = `Shopping Cart Catalog - All`;
+  }, []);
 
   return (
     <main className="mainContent">
