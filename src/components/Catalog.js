@@ -3,6 +3,7 @@ import { Link, Routes, Route, useParams } from "react-router-dom";
 import data from "../data/Data";
 import Header from "./Header";
 import categories from "../data/categories";
+import Item from "./Item";
 
 const Catalog = (props) => {
   const [productsToShow, setProductsToShow] = useState(data);
@@ -59,22 +60,24 @@ const Catalog = (props) => {
           <ul className="catalogList">
             {productsToShow &&
               productsToShow.map((item) => (
-                <li key={item.name} className="catalogItemLi">
-                  <div className="itemCatalogContainer">
-                    <img
-                      src={item.img}
-                      alt={item.name}
-                      className="catalogItem front"
-                    />
-                    <img
-                      src={item.imgback}
-                      alt={item.name}
-                      className="catalogItem back"
-                    />
-                  </div>
-                  <span>{item.name}</span>
-                  <span>${item.price}</span>
-                </li>
+                <Link to={`/catalog/${item.id}`} key={item.name} state={item}>
+                  <li key={item.name} className="catalogItemLi">
+                    <div className="itemCatalogContainer">
+                      <img
+                        src={item.img}
+                        alt={item.name}
+                        className="catalogItem front"
+                      />
+                      <img
+                        src={item.imgback}
+                        alt={item.name}
+                        className="catalogItem back"
+                      />
+                    </div>
+                    <span>{item.name}</span>
+                    <span>${item.price}</span>
+                  </li>
+                </Link>
               ))}
           </ul>
         </section>

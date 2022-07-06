@@ -1,15 +1,15 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import App from "../App";
 import Catalog from "./Catalog";
+import Item from "./Item";
 
 const RouteSwitch = () => {
   return (
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<App />} />
-        <Route path="/catalog" element={<Catalog />}>
-          <Route path="/catalog/:categoryId" element={<Catalog />} />
-        </Route>
+        <Route path="/catalog" element={<Catalog />} />
+        <Route path="/catalog/:id" element={<Item />} />
       </Routes>
     </BrowserRouter>
   );
