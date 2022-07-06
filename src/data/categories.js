@@ -2,9 +2,9 @@
 const categories = [
   { name: "Processors", id: "processors" },
   { name: "Motherboards", id: "motherboards" },
-  { name: "GPUs", id: "gpus" },
+  { name: "GPUs", id: "GPUs" },
   { name: "Monitors", id: "monitors" },
-  { name: "RAM", id: "ram" },
+  { name: "RAM", id: "RAM" },
 ];
 
 export default categories;

@@ -3,19 +3,22 @@ import { Link, Routes, Route, useParams } from "react-router-dom";
 import data from "../data/Data";
 import Header from "./Header";
 import categories from "../data/categories";
-import Item from "./Item";
+import uniqid from "uniqid";
 
 const Catalog = (props) => {
   const [productsToShow, setProductsToShow] = useState(data);
 
   const updateProducts = (category) => {
     if (category) {
-      const newProductsToShow = [
-        data[data.findIndex((item) => item.category === category)],
-      ];
+      const newProductsToShow = data.filter(
+        (item) => item.category === category
+      );
+      console.log("category!: ", category, "products", newProductsToShow);
       setProductsToShow(newProductsToShow);
+      console.log(productsToShow[0].category);
     } else {
       setProductsToShow(data); // goes back to "all" sorting if no category is found
+      console.log("fuck no category!: ", data);
     }
   };
 
@@ -39,15 +42,19 @@ const Catalog = (props) => {
             <div>catalog/All</div>
           )}
           <ul className="ulCategory">
-            <Link to={`/catalog`} key={"all"} onClick={() => updateProducts()}>
+            <Link
+              to={`/catalog`}
+              key={uniqid()}
+              onClick={() => updateProducts()}
+            >
               All
             </Link>
             {categories.map((item) => (
-              <Link to={`/catalog/${item.id}`} key={item.id}>
+              <Link to={`/catalog/${item.id}`} key={uniqid()}>
                 <li
                   className="categoryListIem"
-                  key={item.name}
-                  onClick={() => updateProducts(item.name)}
+                  key={uniqid()}
+                  onClick={() => updateProducts(item.id)}
                 >
                   {item.name}
                 </li>
@@ -61,11 +68,11 @@ const Catalog = (props) => {
             {productsToShow &&
               productsToShow.map((item) => (
                 <Link
-                  to={`/catalog/${item.category}/${item.id}`}
-                  key={item.name}
+                  to={`/catalog/${item.category}`}
+                  key={uniqid()}
                   state={item}
                 >
-                  <li key={item.name} className="catalogItemLi">
+                  <li key={uniqid()} className="catalogItemLi">
                     <div className="itemCatalogContainer">
                       <img
                         src={item.img}

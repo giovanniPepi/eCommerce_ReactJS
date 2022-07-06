@@ -3,7 +3,7 @@ import tufb550back from "../img/motherboard/tufb550back.jpg";
 
 const motherboards = [
   {
-    category: "Motherboards",
+    category: "motherboards",
     id: "TUF-B550M",
     name: "TUF B550M",
     price: 200,

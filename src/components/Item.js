@@ -3,12 +3,10 @@ import { useLocation, useParams } from "react-router-dom";
 import Header from "./Header";
 
 const Item = (props) => {
-  console.log("called item");
   const location = useLocation();
-  let item = props;
-  if (location.state !== null) {
-    item = location.state;
-  }
+  const item = location.state;
+
+  console.log("item was loaded", item.name, { item });
 
   return (
     <main className="mainContent itemPage">
