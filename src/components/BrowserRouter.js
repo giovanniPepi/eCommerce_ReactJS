@@ -9,7 +9,9 @@ const RouteSwitch = () => {
       <Routes>
         <Route path="/" element={<App />} />
         <Route path="/catalog" element={<Catalog />} />
-        <Route path="/catalog/:id" element={<Item />} />
+        <Route path="/catalog/:category" element={<Catalog />}>
+          <Route path="/catalog/:category/:id" element={<Item />} />
+        </Route>
       </Routes>
     </BrowserRouter>
   );

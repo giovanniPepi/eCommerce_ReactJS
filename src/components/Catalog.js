@@ -60,7 +60,11 @@ const Catalog = (props) => {
           <ul className="catalogList">
             {productsToShow &&
               productsToShow.map((item) => (
-                <Link to={`/catalog/${item.id}`} key={item.name} state={item}>
+                <Link
+                  to={`/catalog/${item.category}/${item.id}`}
+                  key={item.name}
+                  state={item}
+                >
                   <li key={item.name} className="catalogItemLi">
                     <div className="itemCatalogContainer">
                       <img
