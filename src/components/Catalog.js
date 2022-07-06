@@ -8,20 +8,24 @@ const Catalog = (props) => {
   const [productsToShow, setProductsToShow] = useState(data);
 
   const updateProducts = (category) => {
-    console.log("received", category);
     const newProductsToShow = [
       data[data.findIndex((item) => item.category === category)],
     ];
-    console.log({ productsToShow }, newProductsToShow);
-
     setProductsToShow(newProductsToShow);
   };
+
+  useEffect(() => {}, [productsToShow]);
 
   return (
     <main className="mainContent">
       <Header />
       <section className="catalog">
         <nav className="leftBarNav">
+          {productsToShow.length < 5 ? (
+            <div>catalog/{productsToShow[0].category}</div>
+          ) : (
+            <div>catalog/All</div>
+          )}
           <ul className="ulCategory">
             {categories.map((item) => (
               <Link to={`/catalog/${item.id}`} key={item.id}>
