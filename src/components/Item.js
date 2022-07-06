@@ -26,6 +26,7 @@ const Item = (props) => {
             alt={item.name}
           />
           <span className="itemDescription" item-testid="descriptionSpan">
+            {item.name}
             {item.description}
           </span>
         </div>

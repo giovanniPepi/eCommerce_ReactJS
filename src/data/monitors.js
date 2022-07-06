@@ -4,12 +4,12 @@ import asusled32back from "../img/monitor/asusled32back.jpg";
 const monitors = [
   {
     category: "Monitors",
-    id: "",
-    name: "Asus-ROG-Strix-32'-LED-Curvo-144-Hz-2K-QHD-FreeSync",
+    id: "Asus-ROG-Strix-32-LED-Curvo-144-Hz-2K-QHD-FreeSync",
+    name: "Asus ROG Strix 32' LED Curvo 144 Hz 2K QHD FreeSync",
     price: 300,
     img: asusled32,
     imgback: asusled32back,
-    gallery: ["", ""],
+    description: "a cool monitor",
   },
 ];
 
