@@ -15,8 +15,16 @@ const Item = (props) => {
           <span className="itemName" item-testid="nameSpan">
             {item.name}
           </span>
-          <img className="itemImg" src={item.img} alt={item.name} />
-          <img className="itemImg" src={item.imgback} alt={item.name} />
+          <img
+            className="catalogItem front itemPageImg"
+            src={item.img}
+            alt={item.name}
+          />
+          <img
+            className="catalogItem back itemPageImg"
+            src={item.imgback}
+            alt={item.name}
+          />
           <span className="itemDescription" item-testid="descriptionSpan">
             {item.description}
           </span>

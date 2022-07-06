@@ -4,9 +4,13 @@ import { Route, Link } from "react-router-dom";
 
 const App = () => {
   return (
-    <>
-      <Link to="/catalog">Catalog</Link>
-    </>
+    <main className="mainHome">
+      <div className="mainBg"></div>
+      <span className="homeIntro">
+        Your dream PC Build awaits you!
+        <Link to="/catalog">Catalog</Link>
+      </span>
+    </main>
   );
 };
 
