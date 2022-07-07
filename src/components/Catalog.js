@@ -47,7 +47,7 @@ const Catalog = (props) => {
               All
             </Link>
             {categories.map((item) => (
-              <Link to={"/catalog"} key={uniqid()}>
+              <Link to={`/catalog/${item.id}`} key={uniqid()}>
                 <li
                   className="categoryListIem"
                   key={uniqid()}
