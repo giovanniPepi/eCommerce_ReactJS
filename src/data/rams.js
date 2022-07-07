@@ -774,18 +774,3 @@ Peso:
 ];
 
 export default ram;
-
-/* 
-
-
-{
-  category: "RAM",
-  id: "",
-  name: "",
-  price: 0,
-  description: ``,
-  img: '',
-  imgback: '',    
-},
-
-*/
