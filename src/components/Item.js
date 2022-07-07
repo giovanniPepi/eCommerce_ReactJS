@@ -4,6 +4,7 @@ import Header from "./Header";
 
 const Item = (props) => {
   const location = useLocation();
+  console.log(location);
   const item = location.state;
 
   console.log("item was loaded", item.name, { item });

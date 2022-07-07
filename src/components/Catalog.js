@@ -4,6 +4,7 @@ import data from "../data/Data";
 import Header from "./Header";
 import categories from "../data/categories";
 import uniqid from "uniqid";
+import Item from "./Item";
 
 const Catalog = (props) => {
   const [productsToShow, setProductsToShow] = useState(data);
@@ -46,7 +47,7 @@ const Catalog = (props) => {
               All
             </Link>
             {categories.map((item) => (
-              <Link to={`/catalog/${item.id}`} key={uniqid()}>
+              <Link to={"/catalog"} key={uniqid()}>
                 <li
                   className="categoryListIem"
                   key={uniqid()}
@@ -63,11 +64,7 @@ const Catalog = (props) => {
           <ul className="catalogList">
             {productsToShow &&
               productsToShow.map((item) => (
-                <Link
-                  to={`/catalog/${item.category}`}
-                  key={uniqid()}
-                  state={item}
-                >
+                <Link to={`/catalog/${item.id}`} key={uniqid()} state={item}>
                   <li key={uniqid()} className="catalogItemLi">
                     <div className="itemCatalogContainer">
                       <img
