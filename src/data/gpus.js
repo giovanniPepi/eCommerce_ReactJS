@@ -819,18 +819,3 @@ Peso:
 ];
 
 export default gpus;
-
-/* 
-
-
-{
-  category: "GPUs",
-  id: "",
-  name: "",
-  price: 0,
-  description: ``,
-  img: '',
-  imgback: '',    
-},
-
-*/
