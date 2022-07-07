@@ -1295,18 +1295,3 @@ Peso:
 ];
 
 export default processors;
-
-/*
-
-  {
-  category: "processors",
-  id: "",
-  name: "",
-  price: 0,
-  description: ``,
-  img: '',
-  imgback: '',    
-},
-
-
-*/
