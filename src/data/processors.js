@@ -33,10 +33,60 @@ const processors = [
   {
     category: "processors",
     id: "Ryzen-3600",
-    name: "Ryzen 3600",
-    price: 0,
+    name: "Processador AMD Ryzen 5 3600 3.6GHz, 36MB, AM4 Wraith Stealth",
+    price: 370,
     img: ryzen3600,
-    description: "blablabla",
+    description: `CARACTERÍSTICAS:
+
+- Marca: AMD
+- Modelo: 100-100000031BOX
+
+ESPECIFICAÇÕES:
+
+- Núcleo: 6 core
+- Nº de threads: 12
+- Frequencia de Operação: 3.6 GHz
+- Frequencia Max Turbo: 4.2 GHz
+- Cache L3: 32MB
+- Potência: 65 W
+- CMOS: 7nm
+
+CONTEÚDO DA EMBALAGEM:
+
+- Processador AMD Ryzen 5 3600 3.6GHz, 36MB, AM4 Wraith Stealth
+
+ 
+
+Garantia do Fornecedor
+
+3 meses
+
+ 
+
+Itens Inclusos
+
+1x Processador AMD Ryzen 5 3600 3.6GHz, 36MB, AM4 Wraith Stealth
+
+ 
+
+Fabricante
+
+AMD
+
+ 
+
+Modelo
+
+Ryzen 5 3600
+
+ 
+
+Linha
+
+Ryzen 5 3000
+
+Peso:
+1000 gramas (bruto com embalagem)`,
     imgback: ryzen3600back,
   },
   {
