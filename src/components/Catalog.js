@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { Link, Routes, Route, useParams } from "react-router-dom";
+import { Link, Routes, Route, useParams, Outlet } from "react-router-dom";
 import data from "../data/Data";
 import Header from "./Header";
 import categories from "../data/categories";
@@ -64,7 +64,11 @@ const Catalog = (props) => {
           <ul className="catalogList">
             {productsToShow &&
               productsToShow.map((item) => (
-                <Link to={`/catalog/${item.id}`} key={uniqid()} state={item}>
+                <Link
+                  to={`/catalog/${item.category}/${item.id}`}
+                  key={uniqid()}
+                  state={item}
+                >
                   <li key={uniqid()} className="catalogItemLi">
                     <div className="itemCatalogContainer">
                       <img

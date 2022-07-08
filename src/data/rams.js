@@ -147,7 +147,7 @@ Peso:
   },
   {
     category: "RAM",
-    id: "Kingston-KF436C18RBK4/128",
+    id: "Kingston-KF436C18RBK4-128",
     name: "Memória Kingston Fury Renegade, 128GB (4x32GB), 3600MHz, DDR4, CL18, Preto - KF436C18RBK4/128",
     price: 889,
     description: `Características:
