@@ -1,9 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-const Header = (props) => {
-  const { cart } = props;
-
+const Header = ({ amountInCart }) => {
   return (
     <header className="header" data-testid="headerTest">
       <nav className="headerNav">
@@ -13,7 +11,8 @@ const Header = (props) => {
         <Link to="/catalog">
           <button>Catalog</button>
         </Link>
-        <div className="cart">{cart}</div>
+        <Link to="/shopping-cart">Cart</Link>
+        <div className="cart">Amount in cart: {amountInCart}</div>
       </nav>
     </header>
   );

@@ -472,7 +472,7 @@ Peso:
   },
   {
     category: "RAM",
-    id: "",
+    id: "Cmw32gx4m2c3000",
     name: "Memória, Corsair Vengeance, Rgb, Pro, 32gb (2x16gb), 3000hz, Ddr4, C15, Preto - Cmw32gx4m2c3000",
     price: 489,
     description: `Características:

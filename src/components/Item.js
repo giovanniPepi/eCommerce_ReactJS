@@ -1,17 +1,10 @@
 import React from "react";
-import { useLocation, useParams } from "react-router-dom";
+import { Link, useLocation, useParams } from "react-router-dom";
 import Header from "./Header";
 
-const Item = (props) => {
-  const location = useLocation();
-  console.log(location);
-  const item = location.state;
-
-  console.log("item was loaded", item.name, { item });
-
+const Item = ({ item, handleAddToCart }) => {
   return (
     <main className="mainContent itemPage">
-      <Header />
       <section className="itemInfo">
         <div className="leftPage">
           <span className="itemName" item-testid="nameSpan">
@@ -34,7 +27,12 @@ const Item = (props) => {
         </div>
         <div className="rightPage">${item.price}</div>
       </section>
-      <button className="addBtn">Add to cart</button>
+      <Link to="/catalog">
+        <button>Go back</button>
+      </Link>
+      <button className="addBtn" onClick={() => handleAddToCart(item)}>
+        Add to cart
+      </button>
       <button className="addBtn instantBtn">BUY IT NOW!</button>
     </main>
   );

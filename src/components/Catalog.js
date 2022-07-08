@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { Link, Routes, Route, useParams, Outlet } from "react-router-dom";
 import data from "../data/Data";
-import Header from "./Header";
 import categories from "../data/categories";
 import uniqid from "uniqid";
 import Item from "./Item";
@@ -30,7 +29,6 @@ const Catalog = (props) => {
 
   return (
     <main className="mainContent">
-      <Header />
       <section className="catalog">
         <nav className="leftBarNav">
           {productsToShow.length < 5 ? (
