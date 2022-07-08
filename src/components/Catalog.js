@@ -47,7 +47,7 @@ const Catalog = (props) => {
               All
             </Link>
             {categories.map((item) => (
-              <Link to={`/catalog/${item.id}`} key={uniqid()}>
+              <Link to={`/catalog`} key={uniqid()}>
                 <li
                   className="categoryListIem"
                   key={uniqid()}
@@ -64,11 +64,7 @@ const Catalog = (props) => {
           <ul className="catalogList">
             {productsToShow &&
               productsToShow.map((item) => (
-                <Link
-                  to={`/catalog/${item.category}/${item.id}`}
-                  key={uniqid()}
-                  state={item}
-                >
+                <Link to={`/catalog/${item.id}`} key={uniqid()} state={item}>
                   <li key={uniqid()} className="catalogItemLi">
                     <div className="itemCatalogContainer">
                       <img
