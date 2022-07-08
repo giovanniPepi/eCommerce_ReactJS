@@ -23,6 +23,7 @@ const App = () => {
   const [category, setCategory] = useState("all");
 
   useEffect(() => {
+    console.log(cart);
     let price = 0;
     cart.forEach((e) => (price += e.quantity * e.price));
     setTotalPrice(price);
@@ -33,7 +34,7 @@ const App = () => {
     if (cart.length > 0)
       cart.forEach((item) => {
         // adds quantity if the item is previously in the cart
-        if (item.name === e.name) {
+        if (item.id === e.id) {
           item.quantity += 1;
           setAmountInCart(amountInCart + 1);
           isInCart = true;
@@ -41,7 +42,7 @@ const App = () => {
       });
 
     if (!isInCart) {
-      setCart([...cart, { product: e, quantity: 1 }]);
+      setCart([...cart, { product: e, quantity: 1, price: e.price }]);
       setAmountInCart(amountInCart + 1);
     }
   };
@@ -63,13 +64,16 @@ const App = () => {
         })}
         <Route
           path="/shopping-cart"
-          element={<Cart />}
-          cart={cart}
-          setCart={setCart}
-          amountInCart={amountInCart}
-          setAmountInCart={setAmountInCart}
-          totalPrice={totalPrice}
-          setTotalPrice={setTotalPrice}
+          element={
+            <Cart
+              cart={cart}
+              setCart={setCart}
+              amountInCart={amountInCart}
+              setAmountInCart={setAmountInCart}
+              totalPrice={totalPrice}
+              setTotalPrice={setTotalPrice}
+            />
+          }
         />
         <Route
           path="*"
