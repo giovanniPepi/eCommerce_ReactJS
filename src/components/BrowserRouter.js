@@ -1,5 +1,6 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import App from "../App";
+import Cart from "./Cart";
 import Catalog from "./Catalog";
 import Item from "./Item";
 
@@ -10,6 +11,7 @@ const RouteSwitch = () => {
         <Route path="/" element={<App />} />
         <Route path="catalog" element={<Catalog />} />
         <Route path="/catalog/:item" element={<Item />} />
+        <Route path="/cart" element={<Cart />} />
 
         <Route
           path="*"
