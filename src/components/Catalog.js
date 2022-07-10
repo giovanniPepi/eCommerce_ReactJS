@@ -63,22 +63,24 @@ const Catalog = (props) => {
             {productsToShow &&
               productsToShow.map((item) => (
                 <Link to={`/catalog/${item.id}`} key={uniqid()} state={item}>
-                  <li key={uniqid()} className="catalogItemLi">
-                    <div className="itemCatalogContainer">
-                      <img
-                        src={item.img}
-                        alt={item.name}
-                        className="catalogItem front"
-                      />
-                      <img
-                        src={item.imgback}
-                        alt={item.name}
-                        className="catalogItem back"
-                      />
-                    </div>
-                    <span>{item.name}</span>
-                    <span>${item.price}</span>
-                  </li>
+                  <div className="catalogContainer">
+                    <li key={uniqid()} className="catalogItemLi">
+                      <div className="itemCatalogContainer">
+                        <img
+                          src={item.img}
+                          alt={item.name}
+                          className="catalogItem front"
+                        />
+                        <img
+                          src={item.imgback}
+                          alt={item.name}
+                          className="catalogItem back"
+                        />
+                      </div>
+                      <span>{item.name}</span>
+                      <span>${item.price}</span>
+                    </li>
+                  </div>
                 </Link>
               ))}
           </ul>

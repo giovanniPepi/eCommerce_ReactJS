@@ -36,28 +36,32 @@ const Cart = ({ cart, setCart, amountInCart, setAmountInCart, totalPrice }) => {
       {amountInCart > 0 && (
         <ul>
           <h1>My cart ({amountInCart} items)</h1>
-          {cart.map((element) => {
-            if (element.quantity === 0) return handleDelete(element);
+          {cart.map((e) => {
+            if (e.quantity === 0) return handleDelete(e);
             return (
               <li key={uniqid()}>
-                <Link to={`/catalog/${element.product.id}`}>
-                  <img src={element.product.img} alt="product" />
+                <Link to={`/catalog/${e.product.id}`}>
+                  <img
+                    className="itemPageImg"
+                    src={e.product.img}
+                    alt="product"
+                  />
                 </Link>
                 <div className="description">
-                  <Link to={`/catalog/${element.id}`}>
-                    <p>{element.name}</p>
+                  <Link to={`/catalog/${e.id}`}>
+                    <p>{e.name}</p>
                   </Link>
                 </div>
                 <div
                   onClick={() => {
-                    handleDelete(element);
+                    handleDelete(e);
                   }}
                 >
                   <p>Remove</p>
                 </div>
                 <div>
-                  <button onClick={() => handleDecrease(element)}>-</button>
-                  <button onClick={() => handleIncrease(element)}>+</button>
+                  <button onClick={() => handleDecrease(e)}>-</button>
+                  <button onClick={() => handleIncrease(e)}>+</button>
                 </div>
               </li>
             );

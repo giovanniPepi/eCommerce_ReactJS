@@ -6,10 +6,12 @@ const Item = ({ item, handleAddToCart }) => {
   return (
     <main className="mainContent itemPage">
       <section className="itemInfo">
-        <div className="leftPage">
+        <div className="topPage">
           <span className="itemName" item-testid="nameSpan">
             {item.name}
           </span>
+        </div>
+        <div className="itemImgContainer">
           <img
             className="catalogItem front itemPageImg"
             src={item.img}
@@ -20,20 +22,23 @@ const Item = ({ item, handleAddToCart }) => {
             src={item.imgback}
             alt={item.name}
           />
+        </div>
+        <div className="bottompage">
           <span className="itemDescription" item-testid="descriptionSpan">
-            {item.name}
             {item.description}
           </span>
+          <div className="cartInfoContainer">
+            <span className="itemPrice">${item.price}</span>
+            <button className="addBtn" onClick={() => handleAddToCart(item)}>
+              Add to cart
+            </button>
+            <button className="addBtn instantBtn">BUY IT NOW!</button>
+          </div>
         </div>
-        <div className="rightPage">${item.price}</div>
       </section>
       <Link to="/catalog">
-        <button>Go back</button>
+        <button className="addBtn">Go back</button>
       </Link>
-      <button className="addBtn" onClick={() => handleAddToCart(item)}>
-        Add to cart
-      </button>
-      <button className="addBtn instantBtn">BUY IT NOW!</button>
     </main>
   );
 };

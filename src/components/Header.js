@@ -6,10 +6,10 @@ const Header = ({ amountInCart }) => {
     <header className="header" data-testid="headerTest">
       <nav className="headerNav">
         <Link to="/">
-          <button>Home</button>
+          <button className="addBtn">Home</button>
         </Link>
         <Link to="/catalog">
-          <button>Catalog</button>
+          <button className="addBtn">Catalog</button>
         </Link>
         <Link to="/shopping-cart">Cart</Link>
         <div className="cart">Amount in cart: {amountInCart}</div>
