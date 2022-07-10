@@ -23,7 +23,6 @@ const Cart = ({ cart, setCart, amountInCart, setAmountInCart, totalPrice }) => {
 
   // memoized = "cached value, so it doesn't need to be recalculated"
   const handleCartChange = useCallback((newCart) => setCart(newCart));
-  console.log("loaded cart");
 
   return (
     <div className="shoppingCart">
@@ -41,8 +40,8 @@ const Cart = ({ cart, setCart, amountInCart, setAmountInCart, totalPrice }) => {
             if (element.quantity === 0) return handleDelete(element);
             return (
               <li key={uniqid()}>
-                <Link to={`/catalog/${element.name}`}>
-                  <img src={element.img} alt="product" />
+                <Link to={`/catalog/${element.product.id}`}>
+                  <img src={element.product.img} alt="product" />
                 </Link>
                 <div className="description">
                   <Link to={`/catalog/${element.id}`}>

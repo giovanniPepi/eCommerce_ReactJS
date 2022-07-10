@@ -20,7 +20,7 @@ const App = () => {
   const [cart, setCart] = useState([]);
   const [amountInCart, setAmountInCart] = useState(0);
   const [totalPrice, setTotalPrice] = useState(0);
-  const [category, setCategory] = useState("all");
+  // const [category, setCategory] = useState("all");
 
   useEffect(() => {
     console.log(cart);
