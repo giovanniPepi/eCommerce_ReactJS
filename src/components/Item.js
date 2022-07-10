@@ -13,14 +13,11 @@ const Item = ({ item, handleAddToCart }) => {
         </div>
         <div className="itemImgContainer">
           <img
-            className="catalogItem front itemPageImg"
+            className="catalogItem"
             src={item.img}
             alt={item.name}
-          />
-          <img
-            className="catalogItem back itemPageImg"
-            src={item.imgback}
-            alt={item.name}
+            onMouseOver={(e) => (e.currentTarget.src = item.imgback)}
+            onMouseOut={(e) => (e.currentTarget.src = item.img)}
           />
         </div>
         <div className="bottompage">

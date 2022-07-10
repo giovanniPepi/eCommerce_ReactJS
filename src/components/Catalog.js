@@ -62,25 +62,23 @@ const Catalog = (props) => {
             {productsToShow &&
               productsToShow.map((item) => (
                 <Link to={`/catalog/${item.id}`} key={uniqid()} state={item}>
-                  <div className="catalogContainer">
-                    <li key={uniqid()} className="catalogItemLi">
-                      <div className="itemCatalogContainer">
-                        <img
-                          src={item.img}
-                          alt={item.name}
-                          className="catalogItem front"
-                          onMouseOver={(e) =>
-                            (e.currentTarget.src = item.imgback)
-                          }
-                          onMouseOut={(e) => {
-                            e.currentTarget.src = item.img;
-                          }}
-                        />
-                      </div>
-                      <span>{item.name}</span>
-                      <span>${item.price}</span>
-                    </li>
-                  </div>
+                  <li key={uniqid()} className="catalogItemLi">
+                    <div className="itemCatalogContainer">
+                      <img
+                        src={item.img}
+                        alt={item.name}
+                        className="catalogItem"
+                        onMouseOver={(e) =>
+                          (e.currentTarget.src = item.imgback)
+                        }
+                        onMouseOut={(e) => {
+                          e.currentTarget.src = item.img;
+                        }}
+                      />
+                    </div>
+                    <span>{item.name}</span>
+                    <span>${item.price}</span>
+                  </li>
                 </Link>
               ))}
           </ul>
