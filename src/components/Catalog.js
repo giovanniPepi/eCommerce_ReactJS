@@ -3,7 +3,6 @@ import { Link, Routes, Route, useParams, Outlet } from "react-router-dom";
 import data from "../data/Data";
 import categories from "../data/categories";
 import uniqid from "uniqid";
-import Item from "./Item";
 
 const Catalog = (props) => {
   const [productsToShow, setProductsToShow] = useState(data);
@@ -70,11 +69,12 @@ const Catalog = (props) => {
                           src={item.img}
                           alt={item.name}
                           className="catalogItem front"
-                        />
-                        <img
-                          src={item.imgback}
-                          alt={item.name}
-                          className="catalogItem back"
+                          onMouseOver={(e) =>
+                            (e.currentTarget.src = item.imgback)
+                          }
+                          onMouseOut={(e) => {
+                            e.currentTarget.src = item.img;
+                          }}
                         />
                       </div>
                       <span>{item.name}</span>
