@@ -87,18 +87,29 @@ body {
 }
 /*Item page*/
 .itemInfo {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-row: 1fr 5fr 1fr;
+  min-height: 100vh;
+}
+.itemNameTop {
+  grid-column: 1/3;
+  grid-row: 1/2;
+}
+.itemImgContainer {
+  grid-column: 1/2;
+  grid-row: 2/3;
+}
+.rightPage {
+  grid-column: 2/3;
+  grid-row: 2/3;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: var(--innerPageGap);
 }
-.cartInfoContainer {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+.bottomPage {
+  grid-column: 1/3;
+  grid-row: 3/4;
 }
-
 .itemName {
   font-weight: bold;
 }

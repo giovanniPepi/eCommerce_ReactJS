@@ -6,11 +6,9 @@ const Item = ({ item, handleAddToCart }) => {
   return (
     <main className="mainContent itemPage">
       <section className="itemInfo">
-        <div className="topPage">
-          <span className="itemName" item-testid="nameSpan">
-            {item.name}
-          </span>
-        </div>
+        <span className="itemNameTop" item-testid="nameSpan">
+          {item.name}
+        </span>
         <div className="itemImgContainer">
           <img
             className="catalogItem"
@@ -20,22 +18,23 @@ const Item = ({ item, handleAddToCart }) => {
             onMouseOut={(e) => (e.currentTarget.src = item.img)}
           />
         </div>
-        <div className="bottompage">
+        <div className="rightPage">
+          <span className="itemPrice">${item.price}</span>
+          <button className="addBtn" onClick={() => handleAddToCart(item)}>
+            Add to cart
+          </button>
+          <button className="addBtn instantBtn">BUY IT NOW!</button>
+
+          <Link to="/catalog">
+            <button className="addBtn">Go back</button>
+          </Link>
+        </div>
+        <div className="bottomPage">
           <span className="itemDescription" item-testid="descriptionSpan">
             {item.description}
           </span>
-          <div className="cartInfoContainer">
-            <span className="itemPrice">${item.price}</span>
-            <button className="addBtn" onClick={() => handleAddToCart(item)}>
-              Add to cart
-            </button>
-            <button className="addBtn instantBtn">BUY IT NOW!</button>
-          </div>
         </div>
       </section>
-      <Link to="/catalog">
-        <button className="addBtn">Go back</button>
-      </Link>
     </main>
   );
 };
