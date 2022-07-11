@@ -35,6 +35,7 @@ const processors = [
     id: "Ryzen-3600",
     name: "Processador AMD Ryzen 5 3600 3.6GHz, 36MB, AM4 Wraith Stealth",
     price: 370,
+    quantity: 1,
     img: ryzen3600,
     description: `CARACTERÍSTICAS:
 
@@ -94,6 +95,7 @@ Peso:
     id: "Intel-Core-I9-10900X",
     name: "Intel Core I9-10900X",
     price: 1399,
+    quantity: 1,
     description: `- Marca: Intel
   - Modelo: Bx8069510900x
 
@@ -153,6 +155,7 @@ Peso:
     id: "Intel-Core-i9-12900KS",
     name: "Intel Core i9-12900KS, Cache 30MB, 3.4GHz, 5.5GHz Max Turbo, LGA 1700, Vídeo Integrado - BX8071512900KS",
     price: 924.99,
+    quantity: 1,
     description: ` Características:
 
 - Marca: Intel
@@ -236,6 +239,7 @@ Peso:
     id: "Intel-12900k-Core-I9",
     name: "Processador Intel 12900k Core I9 1700 3.20 Ghz - Bx8071512900k - Ger 12",
     price: 869.99,
+    quantity: 1,
     description: `CARACTERÍSTICAS:
 
 - Marca: Intel
@@ -304,6 +308,7 @@ Peso:
     id: "Amd-Ryzen-7-5700g",
     name: "Processador Amd Ryzen 7 5700g, 3.8ghz (4.6ghz Max Turbo), Am4, Vídeo Integrado, 8 Núcleos",
     price: 839,
+    quantity: 1,
     description: `Marca: AMD- Modelo: 100-100000263BOXEspecificações: - Nº de núcleos de CPU: 8- Nº de threads: 16- Nº de núcleos de GPU: 8- Clock básico: 3.8GHz- Clock de Max Boost: Até 4.6GHz- Total de Cache L2: 4MB- Cachê L3 total: 16MB- Desbloqueado: Sim- CMOS: TSMC 7nm FinFET- Pacote: AM4- Versão PCI Express: PCIe® 3.0- Solução térmica: Wraith Stealth- TDP / TDP Padrão: 65W- cTDP: 45-65W- Temps máx: 95°CSuporte de SO: - Edição Windows 10 - 64-Bit- RHEL x86 64-Bit- Ubuntu x86 64-BitMemória: - Velocidade máxima da memória: Até 3200MHz- Tipo de memória: DDR4- Canais de memória: 2Especificações da placa de vídeo: - Frequência gráfica: 2000 MHz- Modelo gráfico: Radeon Graphics- Contagem de núcleos gráficos: 8Principais recursos: - Display Port- HDMIConteúdo da Embalagem- 1x Processador AMD Ryzen 7 5700G
 
 
@@ -322,6 +327,7 @@ Peso:
     id: "Intel-Core-i9-12900K",
     name: "Processador Intel Core i9-12900K, Cache 30MB, 3.2GHz (5.2GHz Max Turbo), LGA 1700 - BX8071512900K",
     price: 769,
+    quantity: 1,
     description: `ATENÇÃO:
 
 Características:
@@ -408,6 +414,7 @@ Peso:
     id: "Intel-Core-i7-10700K",
     name: "Processador Intel Core i7-10700K, Cache 16MB, 3.8GHz (5.1GHz Max Turbo), LGA 1200 - BX8070110700K",
     price: 759,
+    quantity: 1,
     description: `Características: 
 
 - Marca: Intel 
@@ -546,6 +553,7 @@ Peso:
     id: "Intel-I9-12900kf",
     name: "Processador Core I9 Processador Bx8071512900kf Hexa Core I9 12900kf 3,2Ghz 30mb Cache S Cooler Lga1700",
     price: 699,
+    quantity: 1,
     description: `CARACTERÍSTICAS:
 - Marca: Intel
 - Modelo: BX8071512900KF
@@ -613,6 +621,7 @@ Peso:
     id: "AMD-Ryzen-9-5900X",
     name: "Processador AMD Ryzen 9 5900X, 3.7GHz, 70MB, 105W, AM4, S/ Cooler",
     price: 689,
+    quantity: 1,
     description: `CARACTERÍSTICAS:
 - Marca: AMD
 - Modelo: 9 5900X
@@ -659,6 +668,7 @@ Peso:
     id: "Ryzen-9-5950X",
     name: "Processador AMD Ryzen 9 5950X, Cache 72MB, 3.4GHz (4.9GHz Max Turbo), AM4 - 100-100000059WOF",
     price: 659,
+    quantity: 1,
     description: `Características:
 
 - Marca: AMD
@@ -738,6 +748,7 @@ Peso:
     id: "Intel-Core-I7-10700ka",
     name: "Processador, Intel, Core I7-10700ka, 3.8ghz, Lga 1200, 16mb, Bx8070110700ka, 8 Nucleos",
     price: 649,
+    quantity: 1,
     description: `Características: 
 
 Marca : Intel
@@ -940,6 +951,7 @@ Peso:
     id: "Intel-11900k-Core-I9",
     name: "Processador Intel 11900k Core I9 (1200) 11a Ger, 3.50 Ghz Box - Bx8070811900k",
     price: 649,
+    quantity: 1,
     description: `Características:
 
 - Marca: Intel
@@ -989,6 +1001,7 @@ Peso:
     id: "AMD-Ryzen-9-3950X",
     name: "Processador AMD Ryzen 9 3950X, Cache 64MB, 4700MHz, AM4 - 100-100000051WOF",
     price: 639,
+    quantity: 1,
     description: `Características:
 
 - Marca: AMD
@@ -1052,6 +1065,7 @@ Peso:
     id: "Intel-Core-I9-10850K",
     name: "Processador Intel Core I9-10850K, 20MB, 3.6GHz - 5.2GHz, LGA 1200 - Bx8070110850k",
     price: 639,
+    quantity: 1,
     description: `Características:
 - Marca: INTEL
 - Modelo: Bx8070110850k
@@ -1129,6 +1143,7 @@ Peso:
     id: "Ryzen-5-5600g",
     name: "Processador Amd Ryzen 5 5600g, 3.9 Até 4.4ghz, 19mb Am4, Wraith Stealth, Radeon Vega 7",
     price: 635,
+    quantity: 1,
     description: `CARACTERÍSTICAS:
 
 - Marca: AMD
@@ -1189,6 +1204,7 @@ Peso:
     id: "AMD-Ryzen-7-5800X3D",
     name: "Processador AMD Ryzen 7 5800X3D, Cache 100MB, 3.4GHz (4.5GHz Max Turbo), AM4, Sem Vídeo - 100-100000651WOF",
     price: 629,
+    quantity: 1,
     description: `Características:
 - Marca: AMD
 - Modelo: 100-100000651WOF

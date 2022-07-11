@@ -1,41 +1,48 @@
 import React from "react";
-import { useLocation, useParams } from "react-router-dom";
-import Header from "./Header";
+import { Link } from "react-router-dom";
 
-const Item = (props) => {
-  const location = useLocation();
-  console.log(location);
-  const item = location.state;
-
-  console.log("item was loaded", item.name, { item });
-
+const Item = ({ item, handleAddToCart }) => {
   return (
     <main className="mainContent itemPage">
-      <Header />
       <section className="itemInfo">
-        <div className="leftPage">
-          <span className="itemName" item-testid="nameSpan">
-            {item.name}
-          </span>
+        <span className="itemNameTop" item-testid="nameSpan">
+          {item.name}
+        </span>
+        <div className="itemImgContainer">
           <img
-            className="catalogItem front itemPageImg"
+            className="catalogItem itemPageImg"
             src={item.img}
             alt={item.name}
+            onMouseOver={(e) => (e.currentTarget.src = item.imgback)}
+            onMouseOut={(e) => (e.currentTarget.src = item.img)}
           />
-          <img
-            className="catalogItem back itemPageImg"
-            src={item.imgback}
-            alt={item.name}
-          />
+        </div>
+        <div className="rightPage">
+          <div className="buyWrapper">
+            <div className="itemPriceContainer">
+              <span className="itemPriceBefore">
+                ${(item.price * (1.05 + Math.random() * 10)).toFixed(0)}
+              </span>
+              <span className="itemPrice">${item.price}</span>
+              <span className="desconto">5% off for Credit Card payments</span>
+            </div>
+            <div className="itemBtnContainer">
+              <button className="addBtn" onClick={() => handleAddToCart(item)}>
+                Add to cart
+              </button>
+              <button className="addBtn instantBtn">BUY IT NOW!</button>
+            </div>
+          </div>
           <span className="itemDescription" item-testid="descriptionSpan">
-            {item.name}
             {item.description}
           </span>
         </div>
-        <div className="rightPage">${item.price}</div>
+        <div className="bottomPage">
+          <Link to="/catalog">
+            <button className="addBtn">Go back</button>
+          </Link>
+        </div>
       </section>
-      <button className="addBtn">Add to cart</button>
-      <button className="addBtn instantBtn">BUY IT NOW!</button>
     </main>
   );
 };

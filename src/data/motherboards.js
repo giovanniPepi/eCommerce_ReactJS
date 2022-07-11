@@ -26,6 +26,7 @@ const motherboards = [
     category: "motherboards",
     id: "TUF-B550M",
     name: "Placa-Mãe Asus TUF Gaming B550M-Plus, AMD B550, mATX, DDR4",
+    quantity: 1,
     description: `Características:
 
 - Marca: Asus
@@ -301,6 +302,7 @@ Peso:
     id: "Asus-Rog-Strix-Z690-g",
     name: "Placa Mãe Asus Rog Strix Z690-g Gaming Wi-fi Intel Soquete Lga 1700",
     price: 1000,
+    quantity: 1,
     description: ``,
     img: RogStrixZ690g,
     imgback: RogStrixZ690gback,
@@ -310,6 +312,7 @@ Peso:
     id: "Evga-X299-Ftw",
     name: "Placa-mãe Evga X299 Ftw K, Intel Lga 2066, Eatx, Ddr4 - 142-sx-e297-kr",
     price: 999,
+    quantity: 1,
     description: `- Chipset Intel X299 Express
 
 - SLI - Até 3-Way
@@ -408,6 +411,7 @@ Peso:
     id: "Asus-Rog-Strix-Z590-e",
     name: "Placa Mae Asus Intel Lga (1200) Atx Ddr4 - Rog Strix Z590-e Gaming Wifi",
     price: 969,
+    quantity: 1,
     description: `Marca: ASUS
 Modelo: ROG STRIX Z590-E GAMING WIFI
 CPU:
@@ -485,6 +489,7 @@ Peso:
     id: "Asus-Rog-Maximus-Xii",
     name: "Placa Mae Asus Rog Maximus Xii Formula 1200, ddr4, m2, ATX",
     price: 965,
+    quantity: 1,
     description: `Características:
 
 - Marca: ASUS
@@ -648,6 +653,7 @@ Peso:
     id: "Gigabyte-Z590-Intel",
     name: "Placa Mãe Gigabyte Z590 Aorus Ultra Intel",
     price: 959,
+    quantity: 1,
     description: `Marca: 
 
 - Gigabyte
@@ -662,6 +668,7 @@ Peso:
     id: "Gigabyte-Z490-Aorus",
     name: "Placa Mãe Gigabyte Z490 Aorus Master Lga 1200 Atx Ddr4 - 9az49mstr-00-11",
     price: 949,
+    quantity: 1,
     description: `Características Placa Mãe Z490 Aorus Master Gigabyte LGA 1200 ATX DDR4 
 - Marca: Aorus
 - Modelo: 9AZ49MSTR-00-11
@@ -898,6 +905,7 @@ Peso:
     id: "Gigabyte-Z690",
     name: "Placa Mãe, Gigabyte, Z690 Aero G DDR4, Chipset Z690, Intel LGA 1700, ATX, DDR4",
     price: 1099,
+    quantity: 1,
     description: `Características:
 
 - Marca: Gigabyte
@@ -1083,6 +1091,7 @@ Peso:
     id: "Rog-Strix-Z590-f",
     name: "Placa Mae Asus Rog Intel Lga (1200) Micro Atx Ddr4 - Strix Z590-f Gaming Wifi",
     price: 949,
+    quantity: 1,
     description: `Características:
 - Marca: Asus
 
@@ -1326,6 +1335,7 @@ Peso:
     id: "Gigabyte-Z690-AORUS-ULTRA",
     name: "Placa Mãe Gigabyte Z690 AORUS ULTRA (rev. 1.0), Intel LGA 1700, ATX, DDR5, M.2 NVME, WIFI - Z690 AORUS ULTRA",
     price: 939,
+    quantity: 1,
     description: `Características:
 
 - Marca: Gigabyte
@@ -1664,6 +1674,7 @@ Peso:
     id: "Gigabyte-B560m",
     name: "Placa Mãe Gigabyte B560m Aorus Elite Lga1200 Matx Ddr4 Hdmi M.2",
     price: 400,
+    quantity: 1,
     description: `Características Placa Mãe mATX Gigabyte B560M Aorus Elite LGA1200
 - Marca: Gigabyte
 - Modelo: B560M Aorus Elite

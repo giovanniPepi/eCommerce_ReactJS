@@ -31,6 +31,7 @@ const ram = [
     id: "XPG-AX4U32008G16A-SB30",
     name: "Memória XPG Gammix D30, 8GB, 3200MHz, DDR4, CL19 - AX4U32008G16A-SB30",
     price: 100,
+    quantity: 1,
     description: `Características:
 
 - Marca: XPG
@@ -98,6 +99,7 @@ Peso:
     id: "Corsair-CMT32GX5M2B5600C36",
     name: "Memória Corsair Dominator, RGB, 32GB (2x16GB), 5600MHz, DDR5, CL36, Preto - CMT32GX5M2B5600C36",
     price: 899,
+    quantity: 1,
     description: `Características:
 
 - Marca: Corsair
@@ -150,6 +152,7 @@ Peso:
     id: "Kingston-KF436C18RBK4-128",
     name: "Memória Kingston Fury Renegade, 128GB (4x32GB), 3600MHz, DDR4, CL18, Preto - KF436C18RBK4/128",
     price: 889,
+    quantity: 1,
     description: `Características:
 
 - Marca: Kingston
@@ -229,6 +232,7 @@ Peso:
     id: "KF426C16BBAK4",
     name: "Memória Kingston Fury Beast, RGB, 128GB (4x32GB), 2666MHz, DDR4, CL16, Preto - KF426C16BBAK4/128",
     price: 799,
+    quantity: 1,
     description: `Caracteristicas:
 - Marca: Kingston
 - Modelo: KF426C16BBAK4/128
@@ -267,6 +271,7 @@ Peso:
     id: "ARS32G60D5R",
     name: "Memória Gigabyte Aorus, RGB, 32GB (2x16GB), 6000MHz, DDR5, Preto - ARS32G60D5R",
     price: 699,
+    quantity: 1,
     description: `Características:
 
 - Marca: Gigabyte
@@ -319,6 +324,7 @@ Peso:
     id: "KF436C16RB1AK4",
     name: "Memória Kingston Fury Renegade, RGB, 64GB (4x16GB), 3600MHz, DDR4, CL16, Preto - KF436C16RB1AK4/64",
     price: 649,
+    quantity: 1,
     description: `Características:
 
 - Marca: Kingston
@@ -398,6 +404,7 @@ Peso:
     id: "Ax4u320016g16a-dt60",
     name: "Memória, Xpg Spectrix, D60g, Rgb, 32gb, 2x16gb, 3200mhz, Ddr4, Cl16, Cinza - Ax4u320016g16a-dt60",
     price: 599,
+    quantity: 1,
     description: `Características:
 - Marca:XPG
 - Modelo:Xpg Spectrix
@@ -438,6 +445,7 @@ Peso:
     id: "Pvsr432g320c8",
     name: "Memoria Ram, Patriot Viper Steel, Rgb 32gb, Ddr4 1x32gb 3200 Mhz - Pvsr432g320c8",
     price: 499,
+    quantity: 1,
     description: `Características:
 
 - Marca:Patriot Memory
@@ -472,9 +480,10 @@ Peso:
   },
   {
     category: "RAM",
-    id: "",
+    id: "Cmw32gx4m2c3000",
     name: "Memória, Corsair Vengeance, Rgb, Pro, 32gb (2x16gb), 3000hz, Ddr4, C15, Preto - Cmw32gx4m2c3000",
     price: 489,
+    quantity: 1,
     description: `Características:
 - Marca:Corsair
 - Modelo:CMW32GX4M2C3000C16
@@ -538,6 +547,7 @@ Peso:
     id: "CMW64GX4M2E3200C16",
     name: "Memória Corsair Vengeance RGB Pro 64GB (2x32GB) 3200MHz DDR4 C16 Black - CMW64GX4M2E3200C16",
     price: 399,
+    quantity: 1,
     description: `Características:
 
 - Marca: Corsair
@@ -586,6 +596,7 @@ Peso:
     id: "Cmsx64gx4m2a2666c18",
     name: "Memória Corsair 64gb (2x32gb), 2666mhz, Ddr4, Vengeance Para Notebook - Cmsx64gx4m2a2666c18 3005",
     price: 395,
+    quantity: 1,
     description: `Características:
 - Marca: Corsair
 - Modelo: CMSX64GX4M2A2666C18
@@ -628,6 +639,7 @@ Peso:
     id: "GP-ARS32G52D5",
     name: "Memória AORUS 32GB (2x16GB), 5200MHz, DDR5, CL40, Preto - GP-ARS32G52D5",
     price: 389,
+    quantity: 1,
     description: `Características:
 
 - Marca: AORUS
@@ -689,6 +701,7 @@ Peso:
     id: "AX5U6000C4016G-DCLARBK",
     name: "Memória XPG Lancer, RGB, 32GB (2x16GB) 6000MHz, DDR5, CL40 - AX5U6000C4016G-DCLARBK",
     price: 299,
+    quantity: 1,
     description: `Características:
 
 - Marca: XPG
@@ -738,6 +751,7 @@ Peso:
     id: "KF426C16BB1K4/64",
     name: "Memória Kingston Fury Beast, 64GB (4x16GB), 2666MHz, DDR4, CL16, Preto - KF426C16BB1K4/64",
     price: 289,
+    quantity: 1,
     description: `Caracteristicas:
 - Marca: Kingston
 - Modelo: KF426C16BB1K4/64

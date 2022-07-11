@@ -23,6 +23,7 @@ const monitors = [
     price: 300,
     img: asusled32,
     imgback: asusled32back,
+    quantity: 1,
     description: `Características:
 
 - Marca: Asus
@@ -171,6 +172,7 @@ Peso:
     id: "Asus-TUF-31-5-144hz",
     name: "Monitor Gamer Asus TUF 31.5' LED, Curvo, 144 Hz, 2K QHD, 1ms, FreeSync, HDR 10, 92% sRGB, HDMI/DisplayPort, Ajuste de Alt, Vesa, Som - VG32VQ",
     price: 250,
+    quantity: 1,
     description: `Características:
 
 - Marca: Asus
@@ -319,6 +321,7 @@ Peso:
     id: "Samsung-Odyssey-G5-34'",
     name: "Monitor Gamer Samsung Odyssey G5 34' VA, Curvo, Wide, 165 Hz, 2K QHD, 1ms, FreeSync Premium, HDR10, HDMI/DisplayPort - LC34G55TWWLXZD",
     price: 759,
+    quantity: 1,
     description: `Características:
 
 - Marca: Samsung
@@ -500,6 +503,7 @@ Peso:
     id: " Samsung-Odyssey-G7-27'",
     name: "Monitor Gamer Samsung Odyssey G7 27' LED, Curvo, Wide, 240 Hz, 2K QHD, 1ms, FreeSync Premium, HDR 600, HDMI/DisplayPort - LC27G75TQSLXZD",
     price: 749,
+    quantity: 1,
     description: `Características:
 
 - Marca: Samsung
@@ -695,6 +699,7 @@ Peso:
     id: "Acer-27-IPS",
     name: "Monitor Gamer Acer 27 IPS, 165 Hz, 2K QHD, 0.4ms, G-Sync, 100% sRGB, HDMI/DisplayPort, Ajuste de Altura, Som Integrado - Predator XB271HU",
     price: 699,
+    quantity: 1,
     description: `Características:
 
 - Marca: Acer
@@ -846,6 +851,7 @@ Peso:
     id: "Gigabyte-27",
     name: "Monitor Gamer Gigabyte 27´ Curvo, QHD, HDMI/DisplayPort, FreeSync, 165Hz, 1ms, Altura Ajustável - G27QC-A",
     price: 649,
+    quantity: 1,
     description: `Características:
 
 - Marca: Gigabyte
@@ -968,6 +974,7 @@ Peso:
     id: "Asus-TUF-27",
     name: "Monitor Gamer Asus TUF 27' LED, Curvo, 165 Hz, 2K QHD, 1ms, FreeSync Premium, HDR 10, 120% sRGB, HDMI/DisplayPort, VESA, Som - VG27WQ1B",
     price: 599,
+    quantity: 1,
     description: `Características:
 
 - Marca: ASUS
@@ -1111,6 +1118,7 @@ Peso:
     id: "Asus-ROG-Swift-32",
     name: "Monitor Gamer Asus ROG Swift 32' IPS, 175 Hz, 2K QHD, 1ms, Adaptive Sync, HDR 600, 160% sRGB, HDMI/DisplayPort, Ajuste de Altura - PG329Q",
     price: 1099,
+    quantity: 1,
     description: `Características:
 
 - Marca: ASUS
