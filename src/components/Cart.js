@@ -60,8 +60,12 @@ const Cart = ({ cart, setCart, amountInCart, setAmountInCart, totalPrice }) => {
                   <p>Remove</p>
                 </div>
                 <div>
-                  <button onClick={() => handleDecrease(e)}>-</button>
-                  <button onClick={() => handleIncrease(e)}>+</button>
+                  <button className="addBtn" onClick={() => handleDecrease(e)}>
+                    -
+                  </button>
+                  <button className="addBtn" onClick={() => handleIncrease(e)}>
+                    +
+                  </button>
                 </div>
               </li>
             );

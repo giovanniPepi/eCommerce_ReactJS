@@ -11,7 +11,9 @@ const Header = ({ amountInCart }) => {
         <Link to="/catalog">
           <button className="addBtn">Catalog</button>
         </Link>
-        <Link to="/shopping-cart">Cart</Link>
+        <Link to="/shopping-cart">
+          <button className="addBtn"> Cart</button>
+        </Link>
         <div className="cart">Amount in cart: {amountInCart}</div>
       </nav>
     </header>

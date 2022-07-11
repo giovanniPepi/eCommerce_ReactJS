@@ -1,6 +1,5 @@
 import React from "react";
-import { Link, useLocation, useParams } from "react-router-dom";
-import Header from "./Header";
+import { Link } from "react-router-dom";
 
 const Item = ({ item, handleAddToCart }) => {
   return (

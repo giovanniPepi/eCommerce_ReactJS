@@ -5,6 +5,7 @@
   --innerPaddingMedium: 1rem;
   --innerBorderSmall: 0.5rem;
   text-align: center;
+  --orange: rgb(255, 101, 0);
 }
 ul,
 li {
@@ -22,6 +23,10 @@ body {
 .addBtn {
   background: none;
   border: none;
+  background-color: var(--orange);
+  color: white;
+  border-radius: 0.25rem;
+  cursor: pointer;
 }
 .mainHome {
   min-height: 100vh;
@@ -57,8 +62,43 @@ body {
 .itemGrid {
   width: 100%;
 }
+/* Responsive --------------------------- */
+@media screen and (min-width: 900px) {
+  .catalog {
+    flex-direction: row;
+  }
+  .leftBarNav {
+    width: 20rem;
+    flex-direction: column;
+  }
+  .ulCategory {
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 899px) {
+  .catalog {
+    flex-direction: column;
+  }
+  .leftBarNav {
+    width: 15rem;
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  .ulCategory {
+    justify-content: space-between;
+  }
+}
+/* -------------------------------------- */
 .leftBarNav {
-  background-color: rgb(188, 192, 196);
+  display: flex;
+  align-items: center;
+  background-color: var(--orange);
+  color: white;
+}
+.ulCategory {
+  display: flex;
+  gap: var(--innerPageGap);
 }
 .catalogList {
   display: grid;
