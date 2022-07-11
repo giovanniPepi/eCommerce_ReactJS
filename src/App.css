@@ -373,9 +373,7 @@ body {
     height: 8vh;
     justify-content: space-evenly;
   }
-  .headerBtn {
-    height: 3.5vh;
-  }
+
   .categoriesDisplayer,
   .showingAll {
     display: none;
@@ -426,8 +424,8 @@ body {
   }
   .addBtn {
     font-size: 1rem;
-    padding: var(--innerPaddingTiny);
     font-weight: bold;
+    padding: 0.6rem;
   }
   .itemPriceContainer {
     display: flex;
@@ -444,6 +442,10 @@ body {
   .desconto {
     align-self: flex-start;
     font-size: 0.7rem;
+  }
+  .headerBtn {
+    height: 3.5vh;
+    padding: 0.2rem 0.4rem 0.4rem 0.4rem;
   }
 }
 /* -------------------------------------- */
