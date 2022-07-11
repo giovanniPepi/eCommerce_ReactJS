@@ -31,9 +31,11 @@ const Catalog = (props) => {
       <section className="catalog">
         <nav className="leftBarNav">
           {productsToShow.length > 50 ? (
-            <div>All Products</div>
+            <div className="categoriesDisplayer">Showing All</div>
           ) : (
-            <div>Showing {productsToShow[0].category}</div>
+            <div className="categoriesDisplayer">
+              Showing {productsToShow[0].category}
+            </div>
           )}
           <ul className="ulCategory">
             {categories.map((item) => (
