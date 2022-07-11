@@ -1,20 +1,23 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import CartIcon from "../img/icons/cart";
 
 const Header = ({ amountInCart }) => {
   return (
     <header className="header" data-testid="headerTest">
       <nav className="headerNav">
         <Link to="/">
-          <button className="addBtn">Home</button>
+          <button className="addBtn headerBtn">Home</button>
         </Link>
         <Link to="/catalog">
-          <button className="addBtn">Catalog</button>
+          <button className="addBtn headerBtn">Catalog</button>
         </Link>
         <Link to="/shopping-cart">
-          <button className="addBtn"> Cart</button>
+          <span className="cart">
+            <CartIcon />
+            {amountInCart} items
+          </span>
         </Link>
-        <div className="cart">Amount in cart: {amountInCart}</div>
       </nav>
     </header>
   );
