@@ -30,7 +30,9 @@ const Cart = ({ cart, setCart, amountInCart, setAmountInCart, totalPrice }) => {
         <div className="emptyCart">
           <p>Your cart is empty!</p>
           <p>Find something to buy: </p>
-          <Link to={"/catalog"} />
+          <Link to="/catalog">
+            <button className="addBtn headerBtn">Catalog</button>
+          </Link>
         </div>
       )}
       {amountInCart > 0 && (
@@ -42,7 +44,7 @@ const Cart = ({ cart, setCart, amountInCart, setAmountInCart, totalPrice }) => {
               <li key={uniqid()}>
                 <Link to={`/catalog/${e.product.id}`}>
                   <img
-                    className="itemPageImg"
+                    className="itemPageImg imgCart"
                     src={e.product.img}
                     alt="product"
                   />

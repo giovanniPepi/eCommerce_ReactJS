@@ -77,8 +77,10 @@ const Catalog = (props) => {
                         }}
                       />
                     </div>
-                    <span className="itemName">{item.name}</span>
-                    <span className="itemPrice">${item.price}</span>
+                    <span className="itemName catalogName">{item.name}</span>
+                    <span className="itemPrice catalogPrice">
+                      ${item.price}
+                    </span>
                   </li>
                 </Link>
               ))}

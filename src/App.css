@@ -169,6 +169,7 @@ body {
 }
 .itemPrice {
   font-weight: bold;
+  color: var(--orange);
 }
 .itemPriceBefore {
   font-size: 0.87rem;
@@ -254,7 +255,7 @@ body {
   .buyWrapper {
     display: flex;
     justify-content: space-between;
-    padding: var(--innerPaddingMedium);
+    padding: 1rem 0 1rem 0;
   }
   .itemDescription {
     text-align: left;
@@ -449,3 +450,14 @@ body {
   }
 }
 /* -------------------------------------- */
+
+.imgCart {
+  width: 10vw;
+  height: auto;
+}
+.catalogPrice {
+  font-size: 1.5rem;
+}
+.catalogName {
+  font-weight: normal;
+}
