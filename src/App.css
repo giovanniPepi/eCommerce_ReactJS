@@ -75,6 +75,7 @@ body {
   display: flex;
   align-items: center;
   gap: var(--innerItemGap);
+  font-size: 1.2rem;
 }
 .itemGrid {
   width: 100%;
@@ -190,12 +191,6 @@ body {
     min-height: 11vh;
     justify-content: space-evenly;
   }
-  .headerBtn {
-    height: 4.5vh;
-    font-size: 1.2rem;
-    padding: 0 1rem 0 1rem;
-    flex: 0;
-  }
   .itemPageImg {
     height: 500px;
     width: auto;
@@ -258,6 +253,10 @@ body {
   }
   .itemDescription {
     word-wrap: normal;
+  }
+  .headerBtn {
+    font-size: 1.4rem;
+    padding: 0 1rem 0.25rem 1rem;
   }
 }
 @media screen and (min-width: 501px) and (max-width: 899px) {
