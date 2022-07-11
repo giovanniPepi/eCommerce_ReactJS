@@ -233,7 +233,9 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 2rem;
+  max-width: 75vw;
+  justify-self: center;
+  font-size: 1.5rem;
 }
 .itemImgContainer {
   grid-column: 1/2;
