@@ -31,7 +31,10 @@ const Catalog = (props) => {
       <section className="catalog">
         <nav className="leftBarNav">
           {productsToShow.length > 50 ? (
-            <div className="categoriesDisplayer">Showing All</div>
+            <div className="leftNavItemContainer showingAll">
+              <div className="categoriesDisplayer">Showing All</div>
+              <div className="divider showingAll"></div>
+            </div>
           ) : (
             <div className="categoriesDisplayer">
               Showing {productsToShow[0].category}
@@ -40,13 +43,16 @@ const Catalog = (props) => {
           <ul className="ulCategory">
             {categories.map((item) => (
               <Link to={`/catalog`} key={uniqid()}>
-                <li
-                  className="categoryListIem"
-                  key={uniqid()}
-                  onClick={() => updateProducts(item.id)}
-                >
-                  {item.name}
-                </li>
+                <div className="leftNavItemContainer">
+                  <li
+                    className="categoryListIem"
+                    key={uniqid()}
+                    onClick={() => updateProducts(item.id)}
+                  >
+                    {item.name}
+                  </li>
+                  <div className="divider"></div>
+                </div>
               </Link>
             ))}
           </ul>
