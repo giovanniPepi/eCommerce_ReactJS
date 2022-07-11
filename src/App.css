@@ -157,6 +157,7 @@ body {
     height: 9vh;
   }
   .ulCategory {
+    margin: 0;
     align-self: center;
     justify-self: center;
   }
@@ -164,7 +165,8 @@ body {
     grid-row: 2/3;
   }
   .headerNav {
-    height: 7vh;
+    margin: 0;
+    height: 8vh;
     justify-content: space-evenly;
   }
   .headerBtn {
