@@ -6,9 +6,6 @@ const Header = ({ amountInCart }) => {
   return (
     <header className="header" data-testid="headerTest">
       <nav className="headerNav">
-        <Link to="/">
-          <button className="addBtn headerBtn">Home</button>
-        </Link>
         <Link to="/catalog">
           <button className="addBtn headerBtn">Catalog</button>
         </Link>

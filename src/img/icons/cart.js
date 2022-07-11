@@ -12,9 +12,11 @@ const CartIcon = (newSize) => {
   const { path, color, size } = btnInfo;
 
   if (btnInfo.newSize) {
-    return <Icon path={path} size={newSize} color={color} />;
+    return (
+      <Icon path={path} size={newSize} color={color} className="cartIcon" />
+    );
   } else {
-    return <Icon path={path} size={size} color={color} />;
+    return <Icon path={path} size={size} color={color} className="cartIcon" />;
   }
 };
 

@@ -9,6 +9,9 @@
   --orangeBrighter: rgb(255, 139, 31);
   --smallRadius: 0.25rem;
   --blue: rgb(0, 96, 177);
+  --shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px,
+    rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px,
+    rgba(0, 0, 0, 0.09) 0px 16px 16px;
 }
 ul,
 li {
@@ -135,6 +138,7 @@ body {
   }
   .headerBtn {
     height: 3.5vh;
+    font-size: 1.1rem;
   }
 }
 @media screen and (max-width: 500px) {
@@ -172,6 +176,7 @@ body {
 /* -------------------------------------- */
 .headerBtn {
   font-weight: bold;
+  box-shadow: var(--shadow);
 }
 .categoriesDisplayer {
 }
