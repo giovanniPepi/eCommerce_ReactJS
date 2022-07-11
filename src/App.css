@@ -153,11 +153,10 @@ body {
     font-weight: bold;
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr;
-    height: 8vh;
+    grid-template-rows: 1fr;
+    height: 9vh;
   }
   .ulCategory {
-    gap: 0.1rem;
     align-self: center;
     justify-self: center;
   }
