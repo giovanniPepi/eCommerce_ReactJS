@@ -1,6 +1,7 @@
 :root {
   --innerPageGap: 1rem;
   --innerItemGap: 0.5rem;
+  --innerPaddingTiny: 0.4rem;
   --innerPaddingSmall: 0.7rem;
   --innerPaddingMedium: 1rem;
   --innerBorderSmall: 0.5rem;
@@ -89,6 +90,7 @@ body {
   justify-content: center;
   align-items: center;
   align-content: center;
+  padding: var(--innerPaddingTiny);
 }
 
 /* Responsive --------------------------- */
@@ -115,6 +117,7 @@ body {
     height: 4.5vh;
     font-size: 1.2rem;
     padding: 0 1rem 0 1rem;
+    flex: 0;
   }
 }
 @media screen and (min-width: 501px) and (max-width: 899px) {
@@ -137,7 +140,7 @@ body {
     justify-content: space-evenly;
   }
   .headerBtn {
-    height: 3.5vh;
+    height: max(3.5vh, 30px);
     font-size: 1.1rem;
   }
 }
@@ -179,6 +182,7 @@ body {
   box-shadow: var(--shadow);
 }
 .categoriesDisplayer {
+  cursor: default;
 }
 .leftBarNav {
   align-items: center;
@@ -204,6 +208,7 @@ body {
   gap: var(--innerItemGap);
   min-height: 400px;
   background-color: white;
+  padding: var(--innerPaddingSmall);
 }
 .catalogItem {
   height: 15rem;
@@ -223,6 +228,11 @@ body {
 .itemNameTop {
   grid-column: 1/3;
   grid-row: 1/2;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
 }
 .itemImgContainer {
   grid-column: 1/2;
@@ -248,4 +258,8 @@ body {
 }
 .catalogItemLi:hover {
   box-shadow: rgba(0, 0, 0, 0.251) 0px 5px 15px;
+}
+
+.leftNavItemContainer:hover {
+  box-shadow: rgba(0, 0, 0, 0.251) 0px 2px 10px;
 }
