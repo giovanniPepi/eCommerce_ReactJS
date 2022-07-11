@@ -24,6 +24,7 @@ const Item = ({ item, handleAddToCart }) => {
                 ${(item.price * (1.05 + Math.random() * 10)).toFixed(0)}
               </span>
               <span className="itemPrice">${item.price}</span>
+              <span className="desconto">5% off for Credit Card payments</span>
             </div>
             <div className="itemBtnContainer">
               <button className="addBtn" onClick={() => handleAddToCart(item)}>

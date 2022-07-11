@@ -8,6 +8,7 @@
   text-align: center;
   --orange: rgb(255, 101, 0);
   --orangeBrighter: rgb(255, 139, 31);
+  --green: rgb(31, 144, 80);
   --smallRadius: 0.25rem;
   --blue: rgb(0, 96, 177);
   --shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px,
@@ -140,6 +141,9 @@ body {
 .itemName {
   font-weight: bold;
 }
+.desconto {
+  color: var(--green);
+}
 /*Animations*/
 
 .catalogItem:hover {
@@ -161,6 +165,7 @@ body {
 }
 .itemNameTop {
   font-weight: bold;
+  margin: 0 0 1rem 0;
 }
 .itemPrice {
   font-weight: bold;
@@ -252,7 +257,7 @@ body {
     padding: var(--innerPaddingMedium);
   }
   .itemDescription {
-    word-wrap: normal;
+    text-align: left;
   }
   .headerBtn {
     font-size: 1.4rem;
