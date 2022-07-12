@@ -9,6 +9,7 @@
   --orange: rgb(255, 101, 0);
   --orangeBrighter: rgb(255, 139, 31);
   --green: rgb(31, 144, 80);
+  --red: rgb(235, 55, 35);
   --smallRadius: 0.25rem;
   --blue: rgb(0, 96, 177);
   --shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px,
@@ -194,7 +195,7 @@ body {
     gap: var(--innerPageGap);
   }
   .headerNav {
-    min-height: 11vh;
+    min-height: 12vh;
     justify-content: space-evenly;
   }
   .itemPageImg {
@@ -264,6 +265,20 @@ body {
     font-size: 1.4rem;
     padding: 0 1rem 0.25rem 1rem;
   }
+  .cartTitle {
+    font-size: 2rem;
+    font-weight: bold;
+  }
+  .cartUl {
+    display: flex;
+  }
+  .cartLi {
+    width: 100vw;
+    display: flex;
+    background-color: orange;
+    justify-content: space-evenly;
+    align-items: center;
+  }
 }
 @media screen and (min-width: 501px) and (max-width: 899px) {
   .catalog {
@@ -281,7 +296,7 @@ body {
     gap: var(--innerPageGap);
   }
   .headerNav {
-    height: 9vh;
+    height: 10vh;
     justify-content: space-evenly;
   }
   .itemPageImg {

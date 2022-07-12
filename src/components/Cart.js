@@ -1,6 +1,7 @@
 import React, { useCallback } from "react";
 import { Link } from "react-router-dom";
 import uniqid from "uniqid";
+import DeleteIcon from "../img/icons/delete";
 
 const Cart = ({ cart, setCart, amountInCart, setAmountInCart, totalPrice }) => {
   // functions to handle quantity inside the cart
@@ -36,42 +37,65 @@ const Cart = ({ cart, setCart, amountInCart, setAmountInCart, totalPrice }) => {
         </div>
       )}
       {amountInCart > 0 && (
-        <ul>
-          <h1>My cart ({amountInCart} items)</h1>
-          {cart.map((e) => {
-            if (e.quantity === 0) return handleDelete(e);
-            return (
-              <li key={uniqid()}>
-                <Link to={`/catalog/${e.product.id}`}>
-                  <img
-                    className="itemPageImg imgCart"
-                    src={e.product.img}
-                    alt="product"
-                  />
-                </Link>
-                <div className="description">
-                  <Link to={`/catalog/${e.id}`}>
-                    <p>{e.name}</p>
+        <section className="cartSection">
+          <span className="cartTitle">My cart ({amountInCart} items)</span>
+          <ul className="cartUl">
+            {cart.map((e) => {
+              if (e.quantity === 0) return handleDelete(e);
+              return (
+                <li key={uniqid()} className="cartLi">
+                  <Link to={`/catalog/${e.product.id}`}>
+                    <img
+                      className="itemPageImg imgCart"
+                      src={e.product.img}
+                      alt="product"
+                      onMouseOver={(el) =>
+                        (el.currentTarget.src = e.product.imgback)
+                      }
+                      onMouseOut={(el) =>
+                        (el.currentTarget.src = e.product.img)
+                      }
+                    />
                   </Link>
-                </div>
-                <div
-                  onClick={() => {
-                    handleDelete(e);
-                  }}
-                >
-                  <p>Remove</p>
-                </div>
-                <div>
-                  <button className="addBtn" onClick={() => handleDecrease(e)}>
-                    -
-                  </button>
-                  <button className="addBtn" onClick={() => handleIncrease(e)}>
-                    +
-                  </button>
-                </div>
-              </li>
-            );
-          })}
+                  <span>{e.product.name}</span>
+                  <span>
+                    <strong>Quantity:</strong> {e.product.quantity}
+                  </span>
+                  <span>
+                    <strong>$</strong> {e.product.price * e.quantity}
+                  </span>
+                  <div className="description">
+                    <Link to={`/catalog/${e.id}`}>
+                      <p>{e.name}</p>
+                    </Link>
+                  </div>
+                  <div
+                    onClick={() => {
+                      handleDelete(e);
+                    }}
+                  >
+                    <p>
+                      <DeleteIcon />
+                    </p>
+                  </div>
+                  <div>
+                    <button
+                      className="addBtn"
+                      onClick={() => handleDecrease(e)}
+                    >
+                      -
+                    </button>
+                    <button
+                      className="addBtn"
+                      onClick={() => handleIncrease(e)}
+                    >
+                      +
+                    </button>
+                  </div>
+                </li>
+              );
+            })}
+          </ul>
           <div className="totalPrice">
             <h3>Total</h3>
             <div className="subTotal">
@@ -92,7 +116,7 @@ const Cart = ({ cart, setCart, amountInCart, setAmountInCart, totalPrice }) => {
             <h3>Methods: </h3>
             <div className="icons">{/* card icons */}</div>
           </div>
-        </ul>
+        </section>
       )}
     </div>
   );
