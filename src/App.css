@@ -335,6 +335,7 @@ button {
     margin-bottom: 1rem;
   }
   .totalSpan {
+    font-size: 1.5rem;
     margin: 0;
     font-weight: bold;
   }
@@ -343,6 +344,10 @@ button {
   }
   .shippingBefore {
     margin-right: 0.5rem;
+  }
+  .paymentMethod {
+    font-weight: bold;
+    margin-bottom: 0.5rem;
   }
 }
 @media screen and (min-width: 501px) and (max-width: 899px) {
@@ -427,6 +432,70 @@ button {
   }
   .itemDescription {
     text-align: left;
+  }
+  .headerBtn {
+    font-size: 1.4rem;
+    padding: 0 1rem 0.25rem 1rem;
+  }
+  .cartSection {
+    display: flex;
+    flex-direction: column;
+    padding: var(--innerPaddingMedium);
+  }
+  .cartTitle {
+    font-size: 2rem;
+    font-weight: bold;
+  }
+  .cartUl {
+    display: flex;
+    flex-direction: column;
+    padding: var(--innerPaddingMedium);
+  }
+  .cartLi {
+    padding: var(--innerPaddingMedium);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .buttonsCart {
+    display: flex;
+    gap: 1rem;
+  }
+  .cartDesc {
+    flex: 1;
+    text-decoration: underline;
+    line-break: anywhere;
+    font-size: 0.9rem;
+  }
+  .imgCart {
+    max-height: 15vh;
+  }
+  .totalCart {
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    gap: 0.5rem;
+    min-height: 20vh;
+    margin-bottom: 1rem;
+  }
+  .totalSpan {
+    font-size: 1.5rem;
+    margin: 0;
+    font-weight: bold;
+    padding: 1rem;
+  }
+  .totalPrice {
+    color: var(--orange);
+  }
+  .shippingBefore {
+    margin-right: 0.5rem;
+  }
+  .paymentMethod {
+    font-weight: bold;
+    margin-bottom: 0.5rem;
   }
 }
 @media screen and (max-width: 500px) {

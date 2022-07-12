@@ -127,10 +127,14 @@ const Cart = ({ cart, setCart, amountInCart, setAmountInCart, totalPrice }) => {
               <p className="total">
                 <strong>Total - Member discount!</strong>
               </p>
-              <span className="totalPrice">${totalPrice * 0.97}</span>
+              <span className="totalPrice">
+                ${(totalPrice * 0.97).toFixed(2)}
+              </span>
             </div>
-            <div className="paymentMethod">
-              <p>Payment options: </p>
+            <div className="paymentMethods">
+              <p>
+                <strong>Payment options: </strong>
+              </p>
               <img
                 className="cardIcons void"
                 src={payment}
