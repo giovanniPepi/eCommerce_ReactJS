@@ -29,6 +29,10 @@ a {
 body {
   margin: 0;
 }
+button {
+  background: inherit;
+  border: none;
+}
 .addBtn {
   background: none;
   border: none;
@@ -271,13 +275,20 @@ body {
   }
   .cartUl {
     display: flex;
+    flex-direction: column;
+    padding: var(--innerPaddingMedium);
+    background-color: orange;
   }
   .cartLi {
-    width: 100vw;
+    padding: var(--innerPaddingMedium);
     display: flex;
-    background-color: orange;
-    justify-content: space-evenly;
+    background-color: purple;
+    justify-content: space-between;
     align-items: center;
+  }
+  .buttonsCart {
+    display: flex;
+    gap: 1rem;
   }
 }
 @media screen and (min-width: 501px) and (max-width: 899px) {

@@ -2,6 +2,8 @@ import React, { useCallback } from "react";
 import { Link } from "react-router-dom";
 import uniqid from "uniqid";
 import DeleteIcon from "../img/icons/delete";
+import MinusIcon from "../img/icons/minus";
+import AddIcon from "../img/icons/plus";
 
 const Cart = ({ cart, setCart, amountInCart, setAmountInCart, totalPrice }) => {
   // functions to handle quantity inside the cart
@@ -69,27 +71,26 @@ const Cart = ({ cart, setCart, amountInCart, setAmountInCart, totalPrice }) => {
                       <p>{e.name}</p>
                     </Link>
                   </div>
-                  <div
-                    onClick={() => {
-                      handleDelete(e);
-                    }}
-                  >
-                    <p>
-                      <DeleteIcon />
-                    </p>
-                  </div>
-                  <div>
+                  <div className="buttonsCart">
                     <button
-                      className="addBtn"
-                      onClick={() => handleDecrease(e)}
+                      className="cartAdd"
+                      onClick={() => {
+                        handleDelete(e);
+                      }}
                     >
-                      -
+                      <DeleteIcon />
                     </button>
                     <button
-                      className="addBtn"
+                      className="cartAdd"
+                      onClick={() => handleDecrease(e)}
+                    >
+                      <AddIcon />
+                    </button>
+                    <button
+                      className="cartAdd"
                       onClick={() => handleIncrease(e)}
                     >
-                      +
+                      <MinusIcon />
                     </button>
                   </div>
                 </li>
