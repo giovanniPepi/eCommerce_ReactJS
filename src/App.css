@@ -597,5 +597,72 @@ button {
     height: 3.5vh;
     padding: 0.2rem 0.4rem 0.4rem 0.4rem;
   }
+  .headerBtn {
+    font-size: 1.4rem;
+    padding: 0 1rem 0.25rem 1rem;
+  }
+  .cartSection {
+    display: flex;
+    flex-direction: column;
+    padding: var(--innerPaddingMedium);
+  }
+  .cartTitle {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  .cartUl {
+    display: flex;
+    flex-direction: column;
+    padding: var(--innerPaddingMedium);
+  }
+  .cartLi {
+    padding: var(--innerPaddingMedium);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .buttonsCart {
+    display: flex;
+    gap: 1rem;
+  }
+  .cartDesc {
+    flex: 1;
+    text-decoration: underline;
+    line-break: anywhere;
+    font-size: 0.9rem;
+  }
+  .imgCart {
+    max-height: 12vh;
+  }
+  .totalCart {
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    gap: 0.5rem;
+    min-height: 10vh;
+    margin-bottom: 1rem;
+  }
+  .totalCart > * {
+    font-size: 1.1rem;
+  }
+  .totalSpan {
+    font-size: 1.3rem;
+    margin: 0;
+    font-weight: bold;
+    padding: 1rem;
+  }
+  .totalPrice {
+    color: var(--orange);
+  }
+  .shippingBefore {
+    margin-right: 0.5rem;
+  }
+  .paymentMethod {
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+  }
 }
 /* -------------------------------------- */
