@@ -13,13 +13,16 @@ const App = () => {
   const [cart, setCart] = useState([]);
   const [amountInCart, setAmountInCart] = useState(0);
   const [totalPrice, setTotalPrice] = useState(0);
+  const [toggle, setToggle] = useState(false);
+  const [animation, setAnimation] = useState(0);
 
   useEffect(() => {
     console.log(cart);
     let price = 0;
     cart.forEach((e) => (price += e.quantity * e.price));
     setTotalPrice(price);
-  }, [amountInCart]);
+    renderAnimations();
+  }, [amountInCart, toggle]);
 
   const handleAddToCart = (e) => {
     console.log(cart);
@@ -34,15 +37,22 @@ const App = () => {
         }
       });
 
+    //animation
+    setToggle(!toggle);
+
     if (!isInCart) {
       setCart([...cart, { product: e, quantity: 1, price: e.price }]);
       setAmountInCart(amountInCart + 1);
     }
   };
 
+  const renderAnimations = () => {
+    return toggle ? setAnimation(1) : setAnimation(0);
+  };
+
   return (
     <HashRouter basename="/">
-      <Header amountInCart={amountInCart} />
+      <Header amountInCart={amountInCart} animation={animation} />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/catalog" element={<Catalog />} />

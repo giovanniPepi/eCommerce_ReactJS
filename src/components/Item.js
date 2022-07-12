@@ -21,7 +21,7 @@ const Item = ({ item, handleAddToCart }) => {
           <div className="buyWrapper">
             <div className="itemPriceContainer">
               <span className="itemPriceBefore">
-                ${(item.price * (1.05 + Math.random() * 10)).toFixed(0)}
+                ${item.price * (1.5 + Math.random() * 7).toFixed(0)}
               </span>
               <span className="itemPrice">${item.price}</span>
               <span className="desconto">5% off for Credit Card payments</span>

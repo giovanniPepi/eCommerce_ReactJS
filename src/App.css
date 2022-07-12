@@ -84,6 +84,8 @@ button {
   align-items: center;
   gap: var(--innerItemGap);
   font-size: 1.2rem;
+  border-radius: 1rem;
+  padding: 1rem;
 }
 .itemGrid {
   width: 100%;
@@ -143,7 +145,6 @@ button {
   transition: all 0.4s cubic-bezier(0.07, 0.75, 0.63, 1.05),
     transform 0.8s cubic-bezier(0.09, 0.76, 0.57, 1.03);
 }
-/*Item page*/
 
 .itemName {
   font-weight: bold;
@@ -151,20 +152,6 @@ button {
 .desconto {
   color: var(--green);
 }
-/*Animations*/
-
-.catalogItem:hover {
-  transform: scale(1.08);
-}
-.catalogItemLi:hover {
-  box-shadow: rgba(0, 0, 0, 0.251) 0px 5px 15px;
-}
-
-.leftNavItemContainer:hover {
-  box-shadow: rgba(0, 0, 0, 0.251) 0px 2px 10px;
-}
-/* --------------------------------------------------- */
-
 .itemInfo {
   display: grid;
   min-height: 85vh;
@@ -673,3 +660,41 @@ button {
   }
 }
 /* -------------------------------------- */
+
+/*Animations  -------------------------------------- */
+
+.catalogItem:hover {
+  transform: scale(1.08);
+}
+.catalogItemLi:hover {
+  box-shadow: rgba(0, 0, 0, 0.251) 0px 5px 15px;
+}
+
+.leftNavItemContainer:hover {
+  box-shadow: rgba(0, 0, 0, 0.251) 0px 2px 10px;
+}
+
+@keyframes going {
+  from {
+    background-color: var(--green);
+  }
+  to {
+    background-color: linear-gradient(#eee7b8, rgb(48, 47, 47));
+  }
+}
+@keyframes back {
+  from {
+    background-color: var(--green);
+  }
+  to {
+    background-color: linear-gradient(#eee7b8, rgb(48, 47, 47));
+  }
+}
+
+.cart[animation="1"] {
+  animation: going 1.5s both;
+}
+.cart[animation="0"] {
+  animation: back 1.5s both;
+}
+/* --------------------------------------------------- */

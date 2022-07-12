@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import CartIcon from "../img/icons/cart";
 
-const Header = ({ amountInCart }) => {
+const Header = ({ amountInCart, animation }) => {
   return (
     <header className="header" data-testid="headerTest">
       <nav className="headerNav">
@@ -10,7 +10,7 @@ const Header = ({ amountInCart }) => {
           <button className="addBtn headerBtn">Catalog</button>
         </Link>
         <Link to="/shopping-cart">
-          <span className="cart">
+          <span className="cart" animation={animation}>
             <CartIcon />
             {amountInCart} items
           </span>
