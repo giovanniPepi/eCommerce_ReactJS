@@ -4,6 +4,7 @@ import uniqid from "uniqid";
 import DeleteIcon from "../img/icons/delete";
 import MinusIcon from "../img/icons/minus";
 import AddIcon from "../img/icons/plus";
+import payment from "../img/icons/payment.png";
 
 const Cart = ({ cart, setCart, amountInCart, setAmountInCart, totalPrice }) => {
   // functions to handle quantity inside the cart
@@ -97,25 +98,28 @@ const Cart = ({ cart, setCart, amountInCart, setAmountInCart, totalPrice }) => {
               );
             })}
           </ul>
-          <div className="totalPrice">
-            <h3>Total</h3>
-            <div className="subTotal">
-              <p>Sub-total</p>
-              <div>{totalPrice}</div>
-            </div>
+          <div className="totalCart">
+            <p className="totalSpan">Order summary</p>
+            <span className="subTotal">Sub-total: {totalPrice}</span>
             <div className="shipping">
-              <p>Shipping:</p>
-              <p>FREE!</p>
+              Shipping:
+              <p className="shippingFeeBefore">$ 34.99</p>
+              <p className="shippingFee">FREE!</p>
             </div>
-            <div className="total">
-              <p>Total: </p>
-              <div>${totalPrice}</div>
+            <p className="total">Total: </p>
+            <p>${totalPrice}</p>
+            <div className="paymentMethod">
+              <p>Payment options: </p>
+              <div className="cardIcons">
+                <img
+                  className="void"
+                  src={payment}
+                  alt="paymentOptions"
+                  width="300"
+                  height="30"
+                />
+              </div>
             </div>
-            <Link to="/404">ORDER!</Link>
-          </div>
-          <div className="paymentMethod">
-            <h3>Methods: </h3>
-            <div className="icons">{/* card icons */}</div>
           </div>
         </section>
       )}
