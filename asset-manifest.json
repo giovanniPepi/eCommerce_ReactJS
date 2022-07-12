@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/eCommerce_ReactJS/static/css/main.28ce1eec.css",
-    "main.js": "/eCommerce_ReactJS/static/js/main.bcd8279e.js",
+    "main.css": "/eCommerce_ReactJS/static/css/main.5f148b99.css",
+    "main.js": "/eCommerce_ReactJS/static/js/main.760a11b6.js",
     "static/media/pexels-josh-sorenson-1714208.jpg": "/eCommerce_ReactJS/static/media/pexels-josh-sorenson-1714208.c6c7e52f998db761b7cf.jpg",
     "static/media/RogStrixZ690g.jpg": "/eCommerce_ReactJS/static/media/RogStrixZ690g.79be2b8deccbd36b33a3.jpg",
     "static/media/Z690AORUSULTRAback.jpg": "/eCommerce_ReactJS/static/media/Z690AORUSULTRAback.5118bda7a136e96ae4ec.jpg",
@@ -112,13 +112,14 @@
     "static/media/Pvsr432g320c8back.jpg": "/eCommerce_ReactJS/static/media/Pvsr432g320c8back.b8f1f65f698344665d81.jpg",
     "static/media/Ax4u320016g16a_dt60back.jpg": "/eCommerce_ReactJS/static/media/Ax4u320016g16a_dt60back.12738942b79fde8b349c.jpg",
     "static/media/Acer27IPSback.jpg": "/eCommerce_ReactJS/static/media/Acer27IPSback.1bf381ddd07270175313.jpg",
+    "static/media/payment.png": "/eCommerce_ReactJS/static/media/payment.28cd0d91702c454fa73a.png",
     "static/media/ryzen3600back.jpg": "/eCommerce_ReactJS/static/media/ryzen3600back.e5c7c8855ca62048b1ed.jpg",
     "index.html": "/eCommerce_ReactJS/index.html",
-    "main.28ce1eec.css.map": "/eCommerce_ReactJS/static/css/main.28ce1eec.css.map",
-    "main.bcd8279e.js.map": "/eCommerce_ReactJS/static/js/main.bcd8279e.js.map"
+    "main.5f148b99.css.map": "/eCommerce_ReactJS/static/css/main.5f148b99.css.map",
+    "main.760a11b6.js.map": "/eCommerce_ReactJS/static/js/main.760a11b6.js.map"
   },
   "entrypoints": [
-    "static/css/main.28ce1eec.css",
-    "static/js/main.bcd8279e.js"
+    "static/css/main.5f148b99.css",
+    "static/js/main.760a11b6.js"
   ]
 }
