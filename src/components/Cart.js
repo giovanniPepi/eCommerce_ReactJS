@@ -59,7 +59,7 @@ const Cart = ({ cart, setCart, amountInCart, setAmountInCart, totalPrice }) => {
                       }
                     />
                   </Link>
-                  <span>{e.product.name}</span>
+                  <span className="cartDesc">{e.product.name}</span>
                   <span>
                     <strong>Quantity:</strong> {e.quantity}
                   </span>

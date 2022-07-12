@@ -277,18 +277,20 @@ button {
     display: flex;
     flex-direction: column;
     padding: var(--innerPaddingMedium);
-    background-color: orange;
   }
   .cartLi {
     padding: var(--innerPaddingMedium);
     display: flex;
-    background-color: purple;
+    gap: 1rem;
     justify-content: space-between;
     align-items: center;
   }
   .buttonsCart {
     display: flex;
     gap: 1rem;
+  }
+  .cartDesc {
+    flex: 1;
   }
 }
 @media screen and (min-width: 501px) and (max-width: 899px) {
