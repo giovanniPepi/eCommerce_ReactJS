@@ -36,7 +36,7 @@ const Catalog = (props) => {
               <div className="divider showingAll"></div>
             </div>
           ) : (
-            <div className="categoriesDisplayer">
+            <div className="categoriesDisplayer showingAll">
               Showing {productsToShow[0].category}
             </div>
           )}

@@ -54,7 +54,7 @@ const App = () => {
     <HashRouter basename="/">
       <Header amountInCart={amountInCart} animation={animation} />
       <Routes>
-        <Route path="/" element={<Home />} />
+        <Route path="/" element={<Catalog />} />
         <Route path="/catalog" element={<Catalog />} />
         {data.map((item) => {
           return (
