@@ -2,7 +2,6 @@ import "./App.css";
 import React, { useEffect, useState } from "react";
 import { Route, Routes, HashRouter } from "react-router-dom";
 import Header from "./components/Header";
-import Home from "./components/Home";
 import Catalog from "./components/Catalog";
 import Cart from "./components/Cart";
 import data from "./data/Data";
