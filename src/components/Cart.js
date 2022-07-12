@@ -59,7 +59,7 @@ const Cart = ({ cart, setCart, amountInCart, setAmountInCart, totalPrice }) => {
                   </Link>
                   <span>{e.product.name}</span>
                   <span>
-                    <strong>Quantity:</strong> {e.product.quantity}
+                    <strong>Quantity:</strong> {e.quantity}
                   </span>
                   <span>
                     <strong>$</strong> {e.product.price * e.quantity}
