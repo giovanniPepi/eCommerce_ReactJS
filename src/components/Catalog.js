@@ -48,7 +48,7 @@ const Catalog = (props) => {
                   onClick={() => updateProducts(item.id)}
                 >
                   <li className="categoryListIem" key={uniqid()}>
-                    {item.name}s
+                    {item.name}
                   </li>
                   <div className="divider"></div>
                 </div>
