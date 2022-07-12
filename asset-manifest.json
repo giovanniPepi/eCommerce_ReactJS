@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/eCommerce_ReactJS/static/css/main.978958be.css",
-    "main.js": "/eCommerce_ReactJS/static/js/main.231f7d5d.js",
+    "main.js": "/eCommerce_ReactJS/static/js/main.ad5ccae5.js",
     "static/media/pexels-josh-sorenson-1714208.jpg": "/eCommerce_ReactJS/static/media/pexels-josh-sorenson-1714208.c6c7e52f998db761b7cf.jpg",
     "static/media/RogStrixZ690g.jpg": "/eCommerce_ReactJS/static/media/RogStrixZ690g.79be2b8deccbd36b33a3.jpg",
     "static/media/Z690AORUSULTRAback.jpg": "/eCommerce_ReactJS/static/media/Z690AORUSULTRAback.5118bda7a136e96ae4ec.jpg",
@@ -116,10 +116,10 @@
     "static/media/ryzen3600back.jpg": "/eCommerce_ReactJS/static/media/ryzen3600back.e5c7c8855ca62048b1ed.jpg",
     "index.html": "/eCommerce_ReactJS/index.html",
     "main.978958be.css.map": "/eCommerce_ReactJS/static/css/main.978958be.css.map",
-    "main.231f7d5d.js.map": "/eCommerce_ReactJS/static/js/main.231f7d5d.js.map"
+    "main.ad5ccae5.js.map": "/eCommerce_ReactJS/static/js/main.ad5ccae5.js.map"
   },
   "entrypoints": [
     "static/css/main.978958be.css",
-    "static/js/main.231f7d5d.js"
+    "static/js/main.ad5ccae5.js"
   ]
 }
