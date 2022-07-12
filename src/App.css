@@ -1,6 +1,7 @@
 :root {
   --innerPageGap: 1rem;
   --innerItemGap: 0.5rem;
+  --cartGap: 4rem;
   --innerPaddingTiny: 0.4rem;
   --innerPaddingSmall: 0.7rem;
   --innerPaddingMedium: 1rem;
@@ -17,8 +18,9 @@
     rgba(0, 0, 0, 0.09) 0px 16px 16px;
 }
 ul,
-li {
-  margin-left: 0;
+li,
+p {
+  margin: 0;
   padding-left: 0;
   list-style: none;
 }
@@ -176,10 +178,15 @@ button {
   font-weight: bold;
   color: var(--orange);
 }
-.itemPriceBefore {
+.itemPriceBefore,
+.shippingBefore {
   font-size: 0.87rem;
   color: rgb(161, 160, 160);
   text-decoration: line-through;
+}
+.shippingFee {
+  font-weight: bold;
+  color: var(--green);
 }
 
 .imgCart {
@@ -284,6 +291,11 @@ button {
     font-size: 1.4rem;
     padding: 0 1rem 0.25rem 1rem;
   }
+  .cartSection {
+    display: flex;
+    flex-direction: column;
+    padding: var(--innerPaddingMedium);
+  }
   .cartTitle {
     font-size: 2rem;
     font-weight: bold;
@@ -307,9 +319,30 @@ button {
   }
   .cartDesc {
     flex: 1;
+    text-decoration: underline;
+    line-break: anywhere;
   }
   .imgCart {
     max-height: 25vh;
+  }
+  .totalCart {
+    align-self: center;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 4rem;
+    min-height: 20vh;
+    margin-bottom: 1rem;
+  }
+  .totalSpan {
+    margin: 0;
+    font-weight: bold;
+  }
+  .totalPrice {
+    color: var(--orange);
+  }
+  .shippingBefore {
+    margin-right: 0.5rem;
   }
 }
 @media screen and (min-width: 501px) and (max-width: 899px) {

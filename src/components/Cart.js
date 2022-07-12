@@ -60,7 +60,9 @@ const Cart = ({ cart, setCart, amountInCart, setAmountInCart, totalPrice }) => {
                       }
                     />
                   </Link>
-                  <span className="cartDesc">{e.product.name}</span>
+                  <Link to={`/catalog/${e.product.id}`}>
+                    <span className="cartDesc">{e.product.name}</span>
+                  </Link>
                   <span>
                     <strong>Quantity:</strong> {e.quantity}
                   </span>
@@ -98,28 +100,48 @@ const Cart = ({ cart, setCart, amountInCart, setAmountInCart, totalPrice }) => {
               );
             })}
           </ul>
+
+          <p className="totalSpan">Order summary</p>
           <div className="totalCart">
-            <p className="totalSpan">Order summary</p>
-            <span className="subTotal">Sub-total: {totalPrice}</span>
-            <div className="shipping">
-              Shipping:
-              <p className="shippingFeeBefore">$ 34.99</p>
-              <p className="shippingFee">FREE!</p>
+            <div className="subTotalContainer">
+              <p className="subTotal">
+                <strong>Sub-total </strong>
+              </p>
+              <p>${totalPrice}</p>
             </div>
-            <p className="total">Total: </p>
-            <p>${totalPrice}</p>
+            <div className="shipping">
+              <p>
+                <strong>Shipping</strong>
+              </p>
+              <p className="shippingFee">
+                <span className="shippingBefore">$ 34.99</span>FREE!
+              </p>
+            </div>
+            <div className="totalContainer">
+              <p className="total">
+                <strong>Total </strong>
+              </p>
+              <span className="totalPrice">${totalPrice}</span>
+            </div>
+            <div className="totalContainer">
+              <p className="total">
+                <strong>Total - Member discount!</strong>
+              </p>
+              <span className="totalPrice">${totalPrice * 0.97}</span>
+            </div>
             <div className="paymentMethod">
               <p>Payment options: </p>
-              <div className="cardIcons">
-                <img
-                  className="void"
-                  src={payment}
-                  alt="paymentOptions"
-                  width="300"
-                  height="30"
-                />
-              </div>
+              <img
+                className="cardIcons void"
+                src={payment}
+                alt="paymentOptions"
+                width="300"
+                height="30"
+              />
             </div>
+            <Link to="/">
+              <button className="addBtn finishBtn">Proceed to Payment</button>
+            </Link>
           </div>
         </section>
       )}
