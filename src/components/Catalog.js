@@ -43,13 +43,12 @@ const Catalog = (props) => {
           <ul className="ulCategory">
             {categories.map((item) => (
               <Link to={`/catalog`} key={uniqid()}>
-                <div className="leftNavItemContainer">
-                  <li
-                    className="categoryListIem"
-                    key={uniqid()}
-                    onClick={() => updateProducts(item.id)}
-                  >
-                    {item.name}
+                <div
+                  className="leftNavItemContainer"
+                  onClick={() => updateProducts(item.id)}
+                >
+                  <li className="categoryListIem" key={uniqid()}>
+                    {item.name}s
                   </li>
                   <div className="divider"></div>
                 </div>

@@ -30,7 +30,14 @@ const Item = ({ item, handleAddToCart }) => {
               <button className="addBtn" onClick={() => handleAddToCart(item)}>
                 Add to cart
               </button>
-              <button className="addBtn instantBtn">BUY IT NOW!</button>
+              <Link to="/shopping-cart">
+                <button
+                  className="addBtn instantBtn"
+                  onClick={() => handleAddToCart(item)}
+                >
+                  BUY IT NOW!
+                </button>
+              </Link>
             </div>
           </div>
           <span className="itemDescription" item-testid="descriptionSpan">
