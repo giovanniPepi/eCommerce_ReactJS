@@ -6,18 +6,15 @@ import MinusIcon from "../img/icons/minus";
 import AddIcon from "../img/icons/plus";
 import payment from "../img/icons/payment.png";
 
-const Cart = ({ cart, setCart, amountInCart, setAmountInCart, totalPrice }) => {
-  // functions to handle quantity inside the cart
-  const handleIncrease = (e) => {
-    e.quantity += 1;
-    setAmountInCart(amountInCart + 1);
-  };
-  const handleDecrease = (e) => {
-    if (e.quantity === 0) return;
-    e.quantity -= 1;
-    setAmountInCart(amountInCart - 1);
-  };
-
+const Cart = ({
+  cart,
+  setCart,
+  amountInCart,
+  setAmountInCart,
+  totalPrice,
+  handleIncrease,
+  handleDecrease,
+}) => {
   // deletes entire item
   const handleDelete = (item) => {
     setAmountInCart(amountInCart - item.quantity); // handle quantity
@@ -67,7 +64,8 @@ const Cart = ({ cart, setCart, amountInCart, setAmountInCart, totalPrice }) => {
                     <strong>Quantity:</strong> {e.quantity}
                   </span>
                   <span>
-                    <strong>$</strong> {e.product.price * e.quantity}
+                    <strong>$</strong>{" "}
+                    {(e.product.price * e.quantity).toFixed(2)}
                   </span>
                   <div className="description">
                     <Link to={`/catalog/${e.id}`}>
@@ -85,13 +83,13 @@ const Cart = ({ cart, setCart, amountInCart, setAmountInCart, totalPrice }) => {
                     </button>
                     <button
                       className="cartAdd"
-                      onClick={() => handleDecrease(e)}
+                      onClick={() => handleIncrease(e)}
                     >
                       <AddIcon />
                     </button>
                     <button
                       className="cartAdd"
-                      onClick={() => handleIncrease(e)}
+                      onClick={() => handleDecrease(e)}
                     >
                       <MinusIcon />
                     </button>
@@ -107,7 +105,7 @@ const Cart = ({ cart, setCart, amountInCart, setAmountInCart, totalPrice }) => {
               <p className="subTotal">
                 <strong>Sub-total </strong>
               </p>
-              <p>${totalPrice}</p>
+              <p>${totalPrice.toFixed(2)}</p>
             </div>
             <div className="shipping">
               <p>
@@ -121,7 +119,7 @@ const Cart = ({ cart, setCart, amountInCart, setAmountInCart, totalPrice }) => {
               <p className="total">
                 <strong>Total </strong>
               </p>
-              <span className="totalPrice">${totalPrice}</span>
+              <span className="totalPrice">${totalPrice.toFixed(2)}</span>
             </div>
             <div className="totalContainer">
               <p className="total">

@@ -23,6 +23,18 @@ const App = () => {
     renderAnimations();
   }, [amountInCart, toggle]);
 
+  // functions to handle quantity inside the cart
+  const handleIncrease = (e) => {
+    console.log(e, e.quantity);
+    e.quantity += 1;
+    setAmountInCart(amountInCart + 1);
+  };
+  const handleDecrease = (e) => {
+    if (e.quantity === 0) return;
+    e.quantity -= 1;
+    setAmountInCart(amountInCart - 1);
+  };
+
   const handleAddToCart = (e) => {
     console.log(cart);
     let isInCart = false;
@@ -74,6 +86,8 @@ const App = () => {
               setAmountInCart={setAmountInCart}
               totalPrice={totalPrice}
               setTotalPrice={setTotalPrice}
+              handleIncrease={handleIncrease}
+              handleDecrease={handleDecrease}
             />
           }
         />
