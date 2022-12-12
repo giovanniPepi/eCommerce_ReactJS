@@ -1,8 +1,10 @@
-A hardware store made with React! 
+A hardware store created with React! 
+
+Using React Router to properly display each product info
 
 Images and information weere gathered from https://www.kabum.com.br/
 
-Live at https://github.com/giovanniPepi/eCommerce_ReactJS
+Live at https://giovannipepi.github.io/eCommerce_ReactJS/
 
 <strong> Preview: </strong>
 
